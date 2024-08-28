@@ -19,9 +19,12 @@ Answer the question based on the above context: {question}
 
 
 def main():
-    # Prompt the user for input.
-    query_text = input("Please enter your query text: ")
-    query_rag(query_text)
+    while True:
+        # Prompt the user for input.
+        query_text = input("Please enter your query text (or type 'exit' to quit): ")
+        if query_text.lower() == 'exit':
+            break
+        query_rag(query_text)
 
 
 def query_rag(query_text: str):
@@ -30,7 +33,13 @@ def query_rag(query_text: str):
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
 
     # Search the DB.
-    results = db.similarity_search_with_score(query_text, k=3)
+    results = db.similarity_search_with_score(query_text, k=5)
+
+    for i, (doc, score) in enumerate(results):
+        print(f"Chunk {i + 1}:")
+        print(f"Content: {doc.page_content}.")
+        print(f"Metadata: {doc.metadata}")
+        print(f"Score: {score}\n")
 
     context_text = "\n\n---\n\n".join([doc.page_content for doc, _score in results])
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
