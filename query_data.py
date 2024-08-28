@@ -19,11 +19,8 @@ Answer the question based on the above context: {question}
 
 
 def main():
-    # Create CLI.
-    parser = argparse.ArgumentParser()
-    parser.add_argument("query_text", type=str, help="The query text.")
-    args = parser.parse_args()
-    query_text = args.query_text
+    # Prompt the user for input.
+    query_text = input("Please enter your query text: ")
     query_rag(query_text)
 
 
@@ -40,7 +37,7 @@ def query_rag(query_text: str):
     prompt = prompt_template.format(context=context_text, question=query_text)
     # print(prompt)
 
-    model = Ollama(model="mistral")
+    model = Ollama(model="llama3.1")
     response_text = model.invoke(prompt)
 
     sources = [doc.metadata.get("id", None) for doc, _score in results]
