@@ -37,7 +37,7 @@ def query_rag(query_text: str):
 
     for i, (doc, score) in enumerate(results):
         print(f"Chunk {i + 1}:")
-        print(f"Content: {doc.page_content}.")
+        print(f"{doc.page_content}.")
         print(f"Metadata: {doc.metadata}")
         print(f"Score: {score}\n")
 
