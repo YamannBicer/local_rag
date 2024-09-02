@@ -1,24 +1,20 @@
 import argparse
 import os
 import shutil
-from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.schema.document import Document
 from get_embedding_function import get_embedding_function
 from langchain_community.vectorstores import Chroma
+from langchain_community.document_loaders import PyPDFDirectoryLoader, DirectoryLoader
+from langchain_community.document_loaders.file_loaders import TextLoader
+
 CHROMA_PATH = "chroma"
 DATA_PATH = "data"
 
-
 def main():
 
-    # Check if the database should be cleared (using the --clear flag).
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--reset", action="store_true", help="Reset the database.")
-    args = parser.parse_args()
-    if args.reset:
-        print("✨ Clearing Database")
-        clear_database()
+    print("✨ Clearing Database")
+    clear_database()
 
     # Create (or update) the data store.
     documents = load_documents()
@@ -27,8 +23,16 @@ def main():
 
 
 def load_documents():
-    document_loader = PyPDFDirectoryLoader(DATA_PATH)
-    return document_loader.load()
+    # Define the loader for PDF files
+    pdf_loader = PyPDFDirectoryLoader(DATA_PATH)
+
+    # Define the loader for TXT files
+    txt_loader = DirectoryLoader(DATA_PATH, glob="*.txt", loader_cls=TextLoader)
+
+    # Load all documents
+    documents = pdf_loader.load() + txt_loader.load()
+
+    return documents
 
 
 def split_documents(documents: list[Document]):
@@ -65,7 +69,7 @@ def add_to_chroma(chunks: list[Document]):
         print(f"👉 Adding new documents: {len(new_chunks)}")
         new_chunk_ids = [chunk.metadata["id"] for chunk in new_chunks]
         db.add_documents(new_chunks, ids=new_chunk_ids)
-        db.persist()
+        print("✅ No new documents to add")
     else:
         print("✅ No new documents to add")
 

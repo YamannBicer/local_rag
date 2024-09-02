@@ -1,0 +1,390 @@
+1
+2
+İçindekiler
+1. Bu Kılavuzu Kimler Kullanmalı? ..................................................................................3
+2. Uygulamaya Nasıl Giriş Yapılır? …..............................................................................3
+3. Uygulamaya Genel Bakış …….……………………………………………………………………….....5
+3.1. Ana Menü .……..………………………………………………………………………………………6
+3.1.1. Raporlar ..…………………………………………………………………………………..6
+3.1.2. Ticaret Yönetimi ..………………………………………………………………………9
+3.1.3. İş İzleme Yönetimi ..…………………………………………………………………11
+3.1.4. Veri Girişi ..…………………………………………………………………………..…..12
+3.1.5. Log Görüntüleme …………………………………………………………………....14
+3.1.6. Fatura Yönetimi ……………………………………………………………………….14
+3.1.7. Sözleşme Yönetimi …………………………………………………………………..19
+3.1.8. Enerji Sanatrali Yönetimi …………………………………………………………25
+3.2. Ekranlarım ..……………………………………………………………………………………….27
+3.3. Araştırma ...………………………………………………………………………………………..28
+3.4. Piyasa & Haber ...……………………………………………………………………………….29
+3.5. Bugün ..……………………………………………………………………………………………….30
+3.6. Profil ..………………………………………………………………………………………………….31
+3.7. Bildirimler .….………………………………………………………………………………………32
+3
+1. Bu Kılavuzu Kimler Kullanmalı?
+Bu kılavuz, enerji sektörüne yönelik olarak tasarlanmış bir entegre çözüm
+platformu olan EWMS uygulaması üzerinden piyasa takibi, işlem yönetimi,
+derinlemesine analiz ve raporlama, canlı veri akışı, dış kaynak yönetimi,
+faturalandırma, santral yönetimi ve bildirim kanallarının yönetiminin nasıl
+yapılacağı hakkında bilgi vermektedir. Yönetim, finans, ticaret, operasyon ve
+santral birimlerindeki kullanıcılar için hazırlanmıştır.
+2. Uygulamaya Nasıl Giriş Yapılır?
+EWMS’te oturum açmak için https://ewms.io/login bağlantısını kullanabilirsiniz.
+Hesabınız oluşturulduğunda size account@ewms.io adresinden e-posta ile iletilen
+şifre ile giriş yapınız.
+4
+Şifrenizi unuttuğunuz durumda şifremi unuttum butonuna tıklayınız. Kayıtlı olan eposta adresinizi yazınız. Yeni şifreniz e-posta adresinize gönderilecektir.
+Sonrasında e-postanıza gelen doğrulama koduyla platforma giriş sağlayabilirsiniz.
+Bu süreçte bir sorunla karşılaşırsanız info@ewms.io adresine bir e-posta
+göndermeniz yeterli.
+5
+Uygulamaya giriş yaptıktan sonra sizi ana ekran karşılayacaktır. Bu ekranda
+platformun sağladığı imkanlara hızlıca göz gezdirebilirsiniz.
+3. Uygulamaya Genel Bakış
+6
+3.1. Ana Menü
+Ana Menü’den platformun sağladığı tüm hizmetlere ulaşmak mümkündür. EWMS, 8
+ana başlıktan oluşan menüden Raporlar, Ticaret Yönetimi, Job Monitoring, Job Data
+Entry, Log Görüntüleyici, Fatura Yönetimi, Sözleşme Yönetimi ve Enerji Santrali
+Yönetimi servislerine ulaşabilme imkanı sunar.
+3.1.1. Raporlar
+Mesitro Control
+Meistro tarafından gönderilen veriler ile Pure’un verilerini karşılaştırmak ve olası
+farkları saptamak için kullanılmaktadır.
+Pure DE
+Meistro tarafından gönderilen veriler ile Pure’un verilerini karşılaştırmak ve olası
+farkları saptamak için kullanılmaktadır.
+7
+GÖP Control
+GÖP Control raporu operasyon ekibinin GÖP girişlerinde yapılan hataların tespiti için
+kullanılmaktadır. Son ayın organizasyon bazında saatlik olarak tahmin, gün içi
+işlemleri ve ikili anlaşma miktarlarının toplamı verisini içerir. Bu toplamın 0’dan büyük
+olması GÖP girişindeki hataları gösterir. Hatanın sebebinin veri eksikliği sebebinden
+olup olmadığını anlayabilmek için “Data Check” sayfasındaki ham veri tablosundan
+kontrol yapılabilir. Ayrıca bu tarihlerdeki istisnai durumlar, eğer varsa, bu sayfadaki
+“Exceptions” tablosunda görülebilir.
+Conciliation
+Uzlaştırma raporları, finansal ve operasyonel verilerin uzlaştırılması için kullanılır. Bu
+raporlar, farklı veri kaynaklarından gelen bilgilerin tutarlılığını ve doğruluğunu kontrol
+eder. Uzlaştırma süreci, şirketin mali ve operasyonel uyumunu sağlamak için kritik
+öneme sahiptir.
+8
+TR Curtailment
+Bu rapor Pure portföyünde yapılan kesinti yüzdelerinin takibi için oluşturulmuştur.
+Rapordaki veriler ay başından bulunduğumuz günün 2 gün öncesine kadarki süreyi
+içerir. Geçmişe dönük verileri görmek için istenilen tarih “Enter Current Date” kısmına
+yazılarak “Reload Data” butonu ile tekrardan veri çekişi yapılabilir. Geçerli tarih aralığı
+sayfanın sağ üst köşesinde görünecektir.
+TR P&L
+Türkiye P&L Rapor, gün içi piyasasında (GİP) yapılan işlemleri kullanılarak TR-Ticaret
+ekibinin P&L’lerini ve GİP de gerçekleşen tüm piyasa işlemlerinin detaylı analizini
+içeren rapordur. 8 Ana sayfadan oluşur.
+9
+Algopoly Performance
+Bu rapor Algopoly’nin aylık faturalandırılmasını otomatikleştirmek için
+oluşturulmuştur. Algopoly tahminlerinin emsys tahminlerine göre performansını bellirli
+metriklerle günlük ve aylık bazda hesaplayıp Algopoly’e ödenecek hizmet bedelini
+belirler. Aynı zamanda Algopoly ve emsys tahmin performanslarını karşılaştıran ve
+günlük küpast miktarını gösteren grafikleri içerir.
+3.1.2. Ticaret Yönetimi
+Gün İçi Ticaret
+Ticaret ekipleri tarafından kullanılabilecek ekrandır. Yayınlanan dengesizlikleri ve
+dengesizlik fiyatları takip edilip dengesizlikleri, iletim sistem operatörü (TSO) ve
+komponent ölçeğinde inceleyip hızlıca analiz edebilmesini sağlar. Karar alma
+süreçlerinde kullanılan verilerin tek bir ekranda toplayıp inceleme imkanı sunar.
+10
+Arz Talep
+Kullanılan bütün veri sağlayacılarından gelen güneş, rüzgar ve yük tahminlerine
+ulaşılmasını sağlayan bu ekranın, sol üstünde bulunan takvim bölümünden geçmişe
+ait günlük haftalık ve aylık verilere ulaşılabilir.
+Sistem Yönü
+Sistem yönündeki trendleri hızlıca analiz etmek için kullanılan bu ekran, geçmiş gün o
+çeyrekte ne olmuş gibi bilgilerle hızlı trend takibi imkanı sunar. Yine sol üstte bulunan
+takvimden tarih aralığını belirlenebilirken sağ üstte bulunan “clear selection”
+butonuyla filtreleme seçimlerini kaldırma olanağı sunar.
+11
+3.1.3. İş İzleme Modülü
+Bu modül, mevcut işlerin durumlarını izlemenizi sağlarken betik tanımlayarak özel
+işlemlerin belirli koşullar altında otomatik olarak gerçekleştirilmesini ve ilgili kişilere
+uyarı gönderilmesini sağlar. Bu işlevler, sistemdeki işlerin ve iş süreçlerinin daha iyi
+yönetilmesine yardımcı olur.
+Script Tanımlama
+Betik tanımlama, market ve piyasa işlemleri gibi belirli görevleri gerçekleştirmek için
+kullanılır. Bu görevlerin alarm olarak bildirilmesi gerekiyorsa, bu bölüme ilgili scriptler
+eklenir. Bu scriptler, sistemde belirli bir koşul gerçekleştiğinde veya belirli bir zaman
+aralığında çalışacak ve ilgili kişilere veya ekiplere bir uyarı gönderecektir.
+Sağ üstte bulunan arama butonuyla tablo içinde arama işlemlerinizi kolaylıkla
+gerçekleştirebilirsiniz. Sağ altta bulunun buton yardımıyla tabloda
+görüntüleyeceğiniz satır sayısını 10, 25, 50 ya da 100 olarak değiştirebilirsiniz.
+12
+Zamanlayıcı
+Bu bölüm, sistemde çalışan işlerin durumlarını izlemenizi sağlar. İşler genellikle belirli
+bir görevi yerine getiren otomatik veya planlanmış işlemlerdir. Bu ekran üzerinden,
+hangi işlerin kaç adet görevi olduğunu ve bu görevlerin durumlarını ayrıntılı olarak
+takip edilir. Tablonun sağ üstünde bulunan buton yardımıyla tablo içinde arama
+yapılabilirken sağ altta bulunan buton yardımıyla tablonun görüntülediği satır sayısı
+özelleştirilir.
+3.1.4. Veri Girişi Modülü
+Bu bölüm, piyasalardaki verilerin otomatik olarak çekilmesi için zaman dilimlerine göre
+tanımlamalar yapmanızı sağlar. Piyasalardaki veriler genellikle belirli aralıklarla
+güncellenir ve bu verileri sisteme düzenli olarak aktarmak önemlidir. Bu bölümde,
+hangi zaman dilimlerinde hangi verilerin alınacağını ve nasıl işleneceğini
+belirleyebilirsiniz. Bu ekrandan veri sağlayıcıları olan Volue ve eZ verilerini
+görüntüleyebilirsiniz.
+13
+Volue ekranı için Zaman Serisi, Örnek Zaman Serisi ve Zamanlayıcı olmak üzere üç
+ayrı sekme bulunmaktadır. Her sekmede bulunan tabloları kendi içinde düzenleme
+imkanı bulunmaktadır. Satırları düzenleyebilir ya da silebilirsiniz. Sağ üstte bulunan
+artı butonuyla satır eklemesi yapabilirsiniz. Arama butonuyla tablo içi arama
+yaparak aradığınız bilgilere hızlıca ulaşabilirsiniz. Sağ altta bulunan butonla tablo
+görünümünü 10, 25, 50 veya 100 satır olarak değiştirebilirsiniz.
+14
+eZ ekranı için Meta Müzayede Hacimleri DA, Meta Karşı Taraf Koridoru, Meta Karşı
+Taraf Hacmi, Meta Dahili Rapor, Meta Saf Tüketim Tahmini ve DB Zamanlayıcı olmak
+üzere 6 sekme bulunmaktadır. Sağ üstte bulunan artı butonundan tablolara ekleme
+yapılabilirken arama butonuyla tablo içi aramaları kolaylıkla yapabilirsiniz. Tabloların
+sağ sütununda bulunan aksiyon kısmından satırlar için düzenleme ve silme işlemi
+gerçekleştirebilirsiniz. Tablonun sağ altında bulunan butonla tablo görünümünü 10,
+25, 50 veya 100 satır olarak değiştirebilirsiniz.
+3.1.5 Log Görüntüleme Modülü
+Bu bölüm, sistemi izlemek ve takip etmek için kullanılır. Kullanıcı, sözleşme ve fatura
+servisi gibi gerçekleşen bütün operasyonel olaylar, işlemler ve hatalar bu bölümde
+kayıt altına alınır.
+Log Görüntüleyici, genellikle sistemin durumunu izlemek, hataları tespit etmek ve hata
+ayıklama süreçlerinde kullanılır ve faaliyetlerin izlenmesine yardımcı olur. Bu bölümde,
+servise başarılı girişler görüntülenir.
+Tablonun sağ üstünd ebulunan arama butonundan tablo içi aramaları yapabilirsiniz.
+Tablonun sağ altında bulunan butondan ise tablo görünümünü 10, 25, 50 veya 100
+satır olarak değiştirebilirsiniz.
+3.1.6. Fatura Yönetimi Modülü
+Bu modül, karşı taraf (counterparty) ile yapılan aylık faturalandırma sürecini yönetmek
+için kullanılır. Burada, fatura oluşturma, görüntüleme, fatura çıktısı üretme ve fatura
+sahibine e-posta gönderme gibi işlemler gerçekleştirilir. Ayrıca, geçmiş faturaları
+görüntüleme imkanı da sunar.
+15
+Faturalar
+Bu alt başlık, karşı taraf ile yapılan faturalandırma sürecini yönetmek için kullanılır.
+İlgili karşı tarafların faturalarını oluşturur, görüntüler, fatura çıktılarını üretir ve
+gerektiğinde fatura sahiplerine e-posta gönderir. Ayrıca, geçmiş faturaları
+görüntüleme gibi işlemler de bu alt bölümde bulunur. Fatura oluşturma, geçmiş
+faturaları görüntüleme, belirli dönemlere ait fatura detaylarını analiz etme ve
+gerektiğinde raporlama için bu tablo yapısı kullanılır.
+Faturalar bölümünde Karşı Taraf ve PSA olmak üzere iki sekme bulunur. Tablonun son
+sütununda bulunan aksiyonlar bölümünden sırasıyla iptal, düzeltme, gönderme ve
+önizleme işlemlerinizi gerçekleştirebilirsiniz. Fatura durumu sütunun faturanın original,
+düzeltilmiş ya da iptal edilmiş olduğunu görebilirsiniz. Sağ üstte bulunan arama
+butonundan tablo içi arama yapabilirsiniz. Faturalar bölümünde Karşı Taraf ve PSA
+olmak üzere iki sekme bulunur. Tablonun son sütununda bulunan aksiyonlar
+bölümünden sırasıyla iptal, düzeltme, gönderme ve önizleme işlemlerinizi
+gerçekleştirebilirsiniz. Fatura durumu sütunun faturanın original, düzeltilmiş ya da
+iptal edilmiş olduğunu görebilirsiniz. Sağ üstte bulunan arama butonundan tablo içi
+arama yapabilirsiniz.
+Tablonun sağ üstünde bulunan artı butonuna basıldığında yeni fatura oluşturma
+ekranı açılır.
+16
+Oluştur butonuyla mevcut sistemde bulunan datalar ile birlikte verileri sistemlerden
+çekerek sıfırdan bir fatura oluşturma işlemi gerçekleştirebilirsiniz. Yeniden Oluştur
+butonu ise oluşturulmuş faturaların mevcut sistemdeki verilerin değişmesi sonucu
+değişiklikleri faturalara yansıtmak için kullanılması gereken işlem butonudur.
+SD Ödemeleri
+Bu bölüm, geçmiş faturaların parse edilerek analiz yapılmasını sağlar. Burada,
+geçmişte oluşturulmuş faturaları kapsayan faturaların analizi yapılır. Örneğin, bir ay
+içinde ne kadar fatura iptal edildi veya düzeltilme yapıldı gibi analizler burada
+gerçekleştirilir. İptal edilmiş veya düzeltilmiş faturaların yanı sıra, fatura içeriğindeki
+diğer detaylar da incelenebilir.
+17
+Tablonun sağdaki aksiyonlar sütunundan sırasıyla onaylama, pdf olarak görüntüleme
+ve önizleme işlemleri gerçekleştirilir. Sağ üstte bulunan arama butonu, tablo içi arama
+yapma imkanı sunar. Sağ altta bulunan buton ise tablo görünümünü 10, 25, 50 veya
+100 satır olarak değiştirme seçenekleri sunar.
+Önizleme butonu kullanıcıyı görüntüleme ve değiştirme imkanı sunan bu sayfaya
+yönlendirir.
+18
+Fatura İptali
+İptal etmek istediğiniz faturayı buraya yükleyerek işleminizi gerçekleştirebilirsiniz.
+Fatura Düzeltme
+Düzeltme yapmak istediğiniz parametreyi (corrector veya storno) yazdıktan sonra
+faturayı yükleyerek isleminizi gerçekleştirebilirsiniz.
+19
+3.1.7. Sözleşme Yönetimi Modülü
+Sözleşme Listesi
+Sözleşme Listesi bölümünde kurumun çeşitli paydaşlarıyla yaptığı anlaşmaları
+gösterir. Şirket içi süreçlerin dijitalleştirmeye katkı sağlar.
+Sağ altta bulunan buton ise tablo görünümünü 10, 25, 50 veya 100 satır olarak
+değiştirme seçenekleri sunar. Sağ üstte sırasıyla filtre, arama ve ekle butonları
+bulunur. Filtre butonuna basıldığında tablo içi filtrelemeyle aranan sözleşmeye hızlıca
+erişim sağlanır.
+Arama butonu yardımıyla tablo içi hızlı arama sağlanır.
+20
+Artı butonun basıldığında kullanıcı, yeni sözleşme oluşturma sayfasına yönlendirilir.
+Bilgiler doldurulup kaydedildiğinde yeni bir sözleşme hazırlanmış olur.
+Sözleşme Tablosu Veri Girişi
+Sözleşme Girişi farklı tip ve kategorilerdeki sözleşmeleri tanımlayabilir, yönetebilir ve
+izleyebilirsiniz. Bu bölümde sözleşmeleri karşı taraf, iletişim, sözleşme türü, adres,
+banka bilgileri, ön ödeme ve tanzimat bilgilerine göre sıralayıp görüntüleyebilirsiniz.
+Sözleşme yönetimi, işletmenin farklı süreçlerini dijitalleştirmek ve düzenlemek için
+önemli bir araç sağlar. Bu sayede, işletmenin farklı paydaşlarıyla yapılan anlaşmaların
+takibini yapabilir, sözleşmelerin süresini yönetebilir ve gerektiğinde sözleşme
+detaylarına erişebilirsiniz. Bu, işletmenin operasyonel verimliliğini artırmak ve iş
+süreçlerini daha etkin bir şekilde yönetmek için önemlidir.
+Sekmelerin hemen sol üstünde bulunan butonlardan görüntülemek istediğiniz
+sözleşme türünü seçiniz.
+21
+Filtreleme ve arama özelliğiyle tabloda
+aradığınız bilgilere hızlıca ulaşma
+olanağı sağlar. Tabloların sağında
+bulunan aksiyonlar sütunu satırdaki
+bilgileri düzenleyip silme imkanı sunar.
+Ekle butonu yardımıyla tabloda
+bulunan istediğiniz sekmeye veri
+girişi yapabilirsiniz.
+Bwe Arayüzü: Bu şekilde bir
+arayüz vardır buraya arayüz
+bilgisini tanımlanır.
+Bwe Sorumlusu: Arıza bilgilerini
+tanımlayan kişi olarak kayıt
+altında tutulur.
+Ana Veri E-postası: Tanımlanan
+kişilerin sorumlu olduğu verilerin
+e-posta bilgisini tutan inputtur.
+Anlaşma Girişi
+Counterparty ile yapılan anlaşmaların veri girişini yapmak için kullanılan
+ekranlarımızdır. Burada müşterilerimiz ile yapılan anlaşmaların detaylarını ürün
+bilgisi, ticaret anlaşmaları, yıl vs gibi kısımların sistem üzerinden veri girişini yaparak
+anlaşma detaylarını tanımlamaktadırlar.
+22
+Sayfada sizi ticaret ve hedge sekmeleri karşılar. Hangisine ait işlemleri görüntülemek
+ya da düzenlemek isterseniz o sekmeden devam ediniz. Tablonun sağ üstünde
+bulunan butonlar sırasıyla arama, yükleme ve ekleme yapmanızı sağlar. Tabloda
+sütun başlıklarının yanında bulunan oklarla sıralama şeklini değiştirebilirsiniz.
+Tabloların sağında bulunan aksiyonlar sütunu satırdaki bilgileri düzenleyip silme
+imkanı sağlar. Sağ altta bulunan buton ise tablo görünümünü 10, 25, 50 veya 100
+satır olarak değiştirme seçeneği sunar.
+23
+Tablonun sağ üstünde bulunan yükleme butonu yardımıyla yukarıda gösterilen ekrana
+ulaşım sağlanır. Örnek şablonu buradan indirebilirsiniz. Excel dosyasını doldurduktan
+ya da var olan dosyayı düzenledikten sonra buraya yükleyerek toplu anlaşma girişini
+gerçekleştirebilirsiniz.
+Anlaşma bilgileri tek tek girilerek oluşturulmak isteniyorsa tablonun sağ üstünde
+bulunan artı butonuyla yeni oluştur sayfasına gidilir. Gerekli alanlar doldurulduktan
+sonra kaydet butonuna basıldığında anlaşma oluşturma tamamalanmış olur.
+24
+ETRM
+ETRM (Energy Trading Risk Management), Enerji ticareti ve risk yönetimi süreçlerini
+optimize etmek için tasarlanmış bir platformdur. Bu platform, enerji piyasalarında
+alım satım, risk değerlendirme ve uyum faliyetlerini entegre ederek verimliliği arttırır.
+Tablonun sağda bulunan aksiyon sütunu yardımıyla satırları düzenleyebilir ya da
+silebilirsiniz. Sağ üstte bulunan artı butonuyla yeni bir ETRM oluşturabilirsiniz. Arama
+butonuyla tablo içi arama yaparak aradığınız bilgilere hızlıca ulaşabilirsiniz. Sağ altta
+bulunan butonla tablo görünümünü 10, 25, 50 veya 100 satır olarak değiştirebilirsiniz.
+Yeni bir ETRM oluştururken istenilen gerekli alanları doldurmalısınız. Sayfanın sağ
+altında beklenen nakit akışını gösteren bir tablo bulunmaktadır. Bu tablo sayesinde
+gerekli kontrolleri sağlayabilme olanağı sunar. Sayfayı oluştur butonuna bastığınzıda
+onay için yöneticinize bildirim gönderilecektir.
+25
+3.1.8. Enerji Santrali Yönetimi Modülü
+Bu bölüm, santrallerin canlı üretim verilerini görselleştirerek ve santrallerin konumlarını
+harita üzerinde göstererek kullanıcıların bilgi almasını sağlar. Bu ekranda aşağıdaki
+veriler ve özellikler bulunmaktadır.
+Canlı üretim verileri Grafana kullanılarak dinamik grafikler ve panolar şeklinde
+görselleştirilir. Bu sayede kullanıcılar, üretim trendlerini ve anlık üretim değerlerini
+kolayca takip edebilirler.
+Santral Haritası
+Santrallerin konumları harita üzerinde işaretlenerek kullanıcıya görsel olarak sunulur.
+Her bir santral için üretim kapasitesi, anlık üretim değerleri gibi bilgiler harita
+üzerindeki işaretçilere tıklanarak erişilebilir. Santrallerin anlık üretim verileri gerçek
+zamanlı olarak takip edilir. Bu veriler, üretim süreçlerinin anlık kontrolünü sağlar ve
+olası sorunlara hızlı müdahale imkanı tanır.
+26
+Santral Durumları
+Santrallere ait günlük geçerli veri oranlarına bu ekran yardımıyla erişilir. Veri doğruluk
+ve başarı oranlarını analiz eden araçlar kullanarak, veri kalitesini ve entegrasyon
+başarısını değerlendirebilirsiniz.
+Canlı Santral Verileri
+Canlı üretim verileri, belirli aralıklarla otomatik olarak güncellenir ve ekrana yansır.
+Üretim verilerinde anormallikler tespit edildiğinde alarm ve bildirim sistemleri devreye
+girer. Sol üstte bulunan buton yardımıyla santral ve VPP forecast adı seçerek istenilen
+bilgilere ulaşabilirsiniz.
+27
+3.2. Ekranlarım
+Ekranlarım menüsü tamamen kullanıcının kendine göre düzenleyebildiği widgetlardan
+oluşur. Kullanıcı görmek istediği ekran kombinasyonları oluşturup kaydettikten sonra
+kendi oluşturduğu ekranlara ulaşma imkanına sahiptir. EWMS, aynı zamanda birden
+fazla ekran oluşturup kaydetme imkanı da sunmaktadır.
+Yeni bir ekran oluşturmak
+istediğinizde uygulama size bu
+ekrana yönlendirecektir.
+Oluşturmak istediğiniz ekrana
+isim verdikten sonra dilerseniz
+açıklama ekleyebilirsiniz.
+Grafikleri yerleşimle görmek
+isterseniz seçiminizi ona göre
+yapabilirsiniz. Ekle butonuna
+bastıktan sonra ekranınız
+kişiselleştirilmeye hazırdır.
+28
+Yeni bir widget eklemek
+istediğinizde artı butonuna
+basınız. Sizi karşılayan bu
+ekranda etiket bölümüne bu
+ekrana vermek istediğiniz ismi
+yazınız. Widgetlardan eklemek
+istediğiniz veri grafiğini seçiniz.
+Dilediğiniz açıklmayı yazdıktan
+sonra ekle diyerek sayfanın yeni
+halini kaydedebilirsiniz.
+3.3. Araştırma
+EWMS GPT, sistemlerde bulunan verilere erişim sağlamak isteyen kullanıcılar için
+geliştirilmiş, GPT (Generative Pre-trained Transformer) tabanlı bir arama ve eşleştirme
+servisidir. Bu servis, kullanıcıların yaptığı isteklere göre, sistem içindeki verileri
+kategorize ederek arama yapılmasını ve bulunan verilerin analiz edilip kullanıcılara
+sunulmasını sağlar. Kullanıcılar, bu servis aracılığıyla, ilgilendikleri kategorilere göre
+sorgulama yapabilir ve sonuçları Excel gibi çeşitli formatlarda indirebilirler.
+Merkezi Arama Sistemi olan EWMS GPT Servisi, kullanıcının yaptığı isteği alır ve
+merkezi arama sistemi aracılığıyla gerekli kategorizasyonu yapar. Bu kategorizasyon,
+verilerin daha etkili bir şekilde filtrelenip sıralanmasını sağlar.
+29
+3.4. Piyasa & Haberler
+Piyasa & Haberler adıyla tanımlanan bu hizmet, enerji sektörüne özel anlık gelişmeleri
+ve haberleri üçüncü parti servisler aracılığıyla takip eden ve bu verileri sisteme entegre
+eden bir modüldür. Bu modülün entegrasyonu sayesinde, kullanıcılar enerji
+piyasasındaki son dakika gelişmelerini, arz ve talep değişikliklerini, yenilenebilir enerji
+kaynaklarına yapılan yatırımların durumunu ve enerji politikalarındaki güncellemeleri
+anlık olarak takip edebilirler. Ayrıca, enerji fiyatlarındaki değişiklikler, piyasa analizleri
+ve uzman görüşleri gibi derinlemesine bilgilere de erişim sağlarlar.
+Kaynaklar bölümünde enerji IQ tarafından yayınlanan Enerjii Piyasası Raporunu
+haftalık olarak bulabilirsiniz. Geçmiş haftalarda yayınlanan raporlara da aynı sayfa
+içinde erişebilirsiniz.
+30
+3.5. Bugün
+Bugün sayfasını kullanıcı kendi istediği verilere göre özelleştirme imkanına sahiptir. Bu
+serviste kullanıcı hızlıca görmek istediği verilere ulaşabilirken piyasanın günlük olarak
+hızlı takibinin sağlanması hedeflenmiştir.
+Gelen boş ekranda sol üstte bulunan tarih kısmından elde etmek istenilen verinin
+tarihi/ tarih arallığı seçildikten sonra istenilen tablo seçilir. Sonrasında istenilen veri
+grafik ve tablo halinde ekranda oluşur.
+31
+3.6. Profil
+Profil bölümünden kullanıcılar yeni alarm oluşturabilir ve daha önce oluşturulan
+alarmları görüntüleyebilirken EWMS genel ayarlarına, profil bilgilerine ulaşabilirler. Dil
+tercihi bu bölümden yapılır. Kulanıcı rolü yine bu alandan görüntülenebilir. Hesaptan
+çıkış yapılmak isteniyorsa sayfanın say altında bulunan çıkış yap butonu
+kullanılmalıdır.
+Öncesinde oluşturulan alarmlat bu sayfadan görüntülenir. Sağ altta bulunan butonu
+yardımıyla da kullanıcıya yeni alarm oluşturma imkanı sunulur.
+32
+Oluşturulmak istenilen alarma bir isim verilir. Gösterge tercihi yapıldıktan sonra fiyatın
+hangi koşulda alarm vereceği bilgileri doldurulur. Bu koşul gerçekleştiğinde kullanıcıya
+haber gidecek olan bildirim kanalı seçilir. Böylelikle alarm oluşturma işlemi tamamlanır.
+Burada gösterge tanımlamaları yapıldıktan sonra (PTF, UEVM vb. market dataları)
+olarak yansıtılır.
+3.7. Bildirimler
+Bu servis, kullanıcılara nasıl bildirim gönderileceğini ve bu bildirim ayarlarının nasıl
+yapılacağını içerir. Kullanıcılar, bu servis sayesinde özel bildirim sistemleri
+oluşturabilecek ve ekipler arası iletişimde bu bildirimleri kullanabilecekler. Bu özellik,
+kullanıcı deneyimini iyileştirirken aynı zamanda ekip içi haberleşmeyi de daha etkili
+kılar. Kullanıcıların tercihlerine göre özelleştirilebilen bildirim ayarları, uygulamanın
+kullanıcı dostu bir arayüz sunmasını hedeflemektedir.
+33
+Renkler yardımıyla özelleştirilen alarmlar sayesinde kullanıcı hangi bildirimin nerden
+geldiğini hızlıca görebilirken öncelik sıralamasının kolayca algılanabilmesi
+hedeflenmiştir.
