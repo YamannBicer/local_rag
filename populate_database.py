@@ -4,9 +4,9 @@ import shutil
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.schema.document import Document
 from get_embedding_function import get_embedding_function
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_community.document_loaders import PyPDFDirectoryLoader, DirectoryLoader
-from langchain_community.document_loaders.file_loaders import TextLoader
+from langchain_community.document_loaders import TextLoader
 
 CHROMA_PATH = "chroma"
 DATA_PATH = "data"
@@ -27,7 +27,7 @@ def load_documents():
     pdf_loader = PyPDFDirectoryLoader(DATA_PATH)
 
     # Define the loader for TXT files
-    txt_loader = DirectoryLoader(DATA_PATH, glob="*.txt", loader_cls=TextLoader)
+    txt_loader = DirectoryLoader(DATA_PATH, glob="*.txt", loader_cls=lambda path: TextLoader(path, encoding="utf-8"))
 
     # Load all documents
     documents = pdf_loader.load() + txt_loader.load()

@@ -1,5 +1,4 @@
-import argparse
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain.prompts import ChatPromptTemplate
 from langchain_community.llms.ollama import Ollama
 
@@ -37,7 +36,7 @@ def query_rag(query_text: str):
 
     for i, (doc, score) in enumerate(results):
         print(f"Chunk {i + 1}:")
-        print(f"{doc.page_content}.")
+        print(f"{doc.page_content}")
         print(f"Metadata: {doc.metadata}")
         print(f"Score: {score}\n")
 
