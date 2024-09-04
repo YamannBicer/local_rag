@@ -6,7 +6,6 @@ faturalandırma, santral yönetimi ve bildirim kanallarının yönetiminin nası
 yapılacağı hakkında bilgi vermektedir. Yönetim, finans, ticaret, operasyon ve
 santral birimlerindeki kullanıcılar için hazırlanmıştır.
 
-
 2. Uygulamaya Nasıl Giriş Yapılır?
 EWMS’te oturum açmak için https://ewms.io/login bağlantısını kullanabilirsiniz.
 Hesabınız oluşturulduğunda size account@ewms.io adresinden e-posta ile iletilen
