@@ -1,3 +1,24 @@
+İçindekiler
+
+Bölüm 1: Bu Kılavuzu Kimler Kullanmalı?
+Bölüm 2: Uygulamaya Nasıl Giriş Yapılır?
+Bölüm 3: Uygulamaya Genel Bakış
+Bölüm 3.1: Ana Menü
+Bölüm 3.1.1: Raporlar
+Bölüm 3.1.2: Ticaret Yönetimi
+Bölüm 3.1.3: İş İzleme Yönetimi
+Bölüm 3.1.4: Veri Girişi
+Bölüm 3.1.5: Log Görüntüleme
+Bölüm 3.1.6: Fatura Yönetimi
+Bölüm 3.1.7: Sözleşme Yönetimi
+Bölüm 3.1.8: Enerji Santrali Yönetimi
+Bölüm 3.2: Ekranlarım
+Bölüm 3.3: Araştırma
+Bölüm 3.4: Piyasa & Haber
+Bölüm 3.5: Bugün
+Bölüm 3.6: Profil
+Bölüm 3.7: Bildirimler
+
 1. Bu Kılavuzu Kimler Kullanmalı?
 Bu kılavuz, enerji sektörüne yönelik olarak tasarlanmış bir entegre çözüm
 platformu olan EWMS uygulaması üzerinden piyasa takibi, işlem yönetimi,
@@ -5,22 +26,20 @@ derinlemesine analiz ve raporlama, canlı veri akışı, dış kaynak yönetimi,
 faturalandırma, santral yönetimi ve bildirim kanallarının yönetiminin nasıl
 yapılacağı hakkında bilgi vermektedir. Yönetim, finans, ticaret, operasyon ve
 santral birimlerindeki kullanıcılar için hazırlanmıştır.
-
 2. Uygulamaya Nasıl Giriş Yapılır?
 EWMS’te oturum açmak için https://ewms.io/login bağlantısını kullanabilirsiniz.
 Hesabınız oluşturulduğunda size account@ewms.io adresinden e-posta ile iletilen
 şifre ile giriş yapınız.
-
+4
 Şifrenizi unuttuğunuz durumda şifremi unuttum butonuna tıklayınız. Kayıtlı olan eposta adresinizi yazınız. Yeni şifreniz e-posta adresinize gönderilecektir.
 Sonrasında e-postanıza gelen doğrulama koduyla platforma giriş sağlayabilirsiniz.
 Bu süreçte bir sorunla karşılaşırsanız info@ewms.io adresine bir e-posta
 göndermeniz yeterli.
-
+5
 Uygulamaya giriş yaptıktan sonra sizi ana ekran karşılayacaktır. Bu ekranda
 platformun sağladığı imkanlara hızlıca göz gezdirebilirsiniz.
-
 3. Uygulamaya Genel Bakış
-
+6
 3.1. Ana Menü
 Ana Menü’den platformun sağladığı tüm hizmetlere ulaşmak mümkündür. EWMS, 8
 ana başlıktan oluşan menüden Raporlar, Ticaret Yönetimi, Job Monitoring, Job Data

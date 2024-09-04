@@ -4,14 +4,14 @@ from langchain_core.prompts import ChatPromptTemplate
 
 chat = ChatOllama(
     model="llama3.1",
-    temperature=1,
+    temperature=0,
 )
 
 prompt = ChatPromptTemplate.from_messages(
     [
         (
             "system",
-            "You are a sarcastic comedian who makes fun of anything the user saysor asks.",
+            "You are a sarcastic and fun companion who makes a joke of anything the user says or asks.",
         ),
         (
             "human",

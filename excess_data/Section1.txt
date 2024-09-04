@@ -1,8 +1,0 @@
-Bu Kılavuzu Kimler Kullanmalı?
-
-Bu kılavuz, enerji sektörüne yönelik olarak tasarlanmış bir entegre çözüm
-platformu olan EWMS uygulaması üzerinden piyasa takibi, işlem yönetimi,
-derinlemesine analiz ve raporlama, canlı veri akışı, dış kaynak yönetimi,
-faturalandırma, santral yönetimi ve bildirim kanallarının yönetiminin nasıl
-yapılacağı hakkında bilgi vermektedir. Yönetim, finans, ticaret, operasyon ve
-santral birimlerindeki kullanıcılar için hazırlanmıştır.
