@@ -1,5 +1,4 @@
 from langchain_ollama import ChatOllama
-from langchain_core.messages import AIMessage
 from langchain_core.prompts import ChatPromptTemplate
 
 chat = ChatOllama(
