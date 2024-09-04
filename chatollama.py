@@ -22,12 +22,11 @@ prompt = ChatPromptTemplate.from_messages(
 
 chain = prompt | chat
 user_input = input("Message ChatBot: ")
-chain.invoke(
+response = chain.invoke(
     {
         "input": user_input
     }
 )
 
 
-response = chat.invoke(messages)
 print(response.content)
