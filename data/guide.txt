@@ -36,8 +36,229 @@ If you forget your password, click the "Forgot Password" button. Enter your regi
 Once you log into the application, you will be greeted by the main screen, where you can quickly review the features provided by the platform.
 
 #
+
 Main Menu:
 From the Main Menu, you can access all the services provided by the platform.
 EWMS offers access to the following services through a menu consisting of 8 main sections:
 Reports, Trade Management, Job Monitoring, Job Data Entry, Log Viewer, Invoice Management, Contract Management, and Power Plant Management.
+
+#
+
+Reports\Mesitro Control:
+Used to compare the data sent by Meistro with Pure's data and to identify any potential discrepancies.
+
+
+#
+
+Reports\Pure DE:
+Used to compare the data sent by Meistro with Pure's data and to identify any potential discrepancies.
+
+#
+
+
+Reports\Day Ahead Market (DAM) Control:
+The DAM Control report is used by the operations team to identify errors in DAM entries. It includes the hourly data for the last month based on organization, including forecasts, intraday transactions, and bilateral agreement amounts. If this total is greater than 0, it indicates errors in the DAM entry. To determine whether the error is due to missing data, the raw data table on the "Data Check" page can be reviewed. Additionally, any exceptional cases for these dates, if available, can be seen in the "Exceptions" table on this page.
+#
+
+
+
+Reports\Conciliation:
+Conciliation reports are used to reconcile financial and operational data. These reports check the consistency and accuracy of information from various data sources. The reconciliation process is critical for ensuring the company’s financial and operational compliance.
+#
+
+Reports\TR Curtailment:
+This report is created to track the curtailment percentages in the Pure portfolio. The data in the report covers the period from the beginning of the month until two days prior to the current day. To view historical data, enter the desired date in the "Enter Current Date" field and click the "Reload Data" button to fetch the data again. The valid date range will be displayed in the top-right corner of the page.
+#
+
+Reports\TR Profit & Loss:
+The Turkey Profit & Loss report provides detailed analysis of the Turkish Trade team’s Profit & Loss using intraday market (GİP) transactions, including all market transactions conducted in the GİP. It consists of 8 main pages.
+#
+
+
+Reports\Algopoly Performance:
+This report is created to automate the monthly billing for Algopoly. It calculates the performance of Algopoly forecasts compared to emsys forecasts using certain metrics on a daily and monthly basis, determining the service fee payable to Algopoly. It also includes charts comparing the forecast performance of Algopoly and emsys and shows the daily capped amounts.
+
+
+#
+Trade Management\Intraday Trading:
+This screen can be used by trading teams. It allows the tracking of published imbalances and imbalance prices, enabling the quick analysis of imbalances at the transmission system operator (TSO) and component levels. It provides the ability to gather and examine the data used in decision-making processes on a single screen.
+#
+
+
+Trade Management\Supply and Demand:
+This screen provides access to solar, wind, and load forecasts from all data providers in use. Historical daily, weekly, and monthly data can be accessed from the calendar section located at the top left.
+#
+
+
+Trade Management\System Direction:
+This screen is used to quickly analyze trends in system direction. It offers the ability to track trends by providing insights into what happened in the past during that quarter. The date range can be set using the calendar at the top left, while the "clear selection" button in the top right allows for the removal of filtering selections.
+
+#
+
+Workflow Monitoring Module:
+This module allows you to monitor the status of ongoing tasks while enabling you to define scripts that automate specific operations under certain conditions and send alerts to relevant individuals. These functions help improve the management of tasks and workflows within the system.
+
+#
+Workflow Monitoring\Script Definition:
+Script definition is used to perform specific tasks, such as market and trading operations. If these tasks need to be reported as alarms, the relevant scripts are added to this section. These scripts will run when a specific condition is met in the system or within a certain time frame, sending alerts to the appropriate individuals or teams. You can easily search within the table using the search button located in the top right. You can also adjust the number of rows displayed in the table to 10, 25, 50, or 100 using the button located at the bottom right.
+
+
+#
+Workflow Monitoring\Scheduler:
+This section allows you to monitor the status of jobs running in the system. Jobs are typically automatic or scheduled processes that perform specific tasks. Through this screen, you can track how many tasks each job has and their statuses in detail. You can search within the table using the button in the top right, and customize the number of rows displayed using the button at the bottom right.
+
+#
+Data Entry Module:
+This section allows you to define schedules for automatically retrieving data from the markets. Market data is usually updated at specific intervals, and it is important to regularly transfer this data into the system. In this section, you can determine which data should be retrieved at which intervals and how it will be processed. From this screen, you can view the data from providers such as Volue and eZ.
+#
+
+Data Entry Module\ Volue Screen: For the Volue screen, there are three separate tabs: Time Series, Sample Time Series, and Scheduler. Each tab allows you to organize the tables within it. You can edit or delete rows, and use the plus button in the top right to add new rows. The search button allows you to quickly find information within the table. You can adjust the table view to display 10, 25, 50, or 100 rows using the button at the bottom right.
+
+#
+
+Data Entry Module\ eZ Screen:For the eZ screen, there are 6 tabs: Meta Auction Volumes DA, Meta Counterparty Corridor, Meta Counterparty Volume, Meta Internal Report, Meta Pure Consumption Forecast, and DB Scheduler. You can add new entries to the tables using the plus button in the top right, and easily search within the tables using the search button. The action section on the right side of the tables allows you to edit or delete rows. You can also customize the table view to display 10, 25, 50, or 100 rows using the button at the bottom right.
+#
+
+Log Viewer Module:
+This section is used to monitor and track the system. All operational events, transactions, and errors, such as those related to contract and invoice services, are logged here. The Log Viewer is typically used to monitor system status, detect errors, and assist in debugging processes, helping to track activities. In this section, successful entries into services can be viewed.
+
+You can perform searches within the table using the search button located at the top right. The table view can be adjusted to display 10, 25, 50, or 100 rows using the button at the bottom right.
+#
+
+Invoice Management Module:
+This module is used to manage the monthly invoicing process with the counterparty. It allows you to perform tasks such as creating invoices, viewing them, generating invoice outputs, and sending invoices via email to the invoice owner. Additionally, it provides the ability to view past invoices.
+#
+
+Invoices:
+This subsection is used to manage the invoicing process with the counterparty. It allows for creating, viewing, generating invoice outputs, and sending invoices via email to the invoice owners when necessary. Additionally, tasks such as viewing past invoices can be performed in this subsection. The table structure here is used for creating invoices, viewing past invoices, analyzing invoice details for specific periods, and reporting when needed.
+
+The Invoices section has two tabs: Counterparty and PSA. In the action column at the end of the table, you can perform operations such as canceling, correcting, sending, and previewing invoices. The invoice status column shows whether the invoice is original, corrected, or canceled. You can use the search button in the top right to search within the table. Clicking the plus button in the top right opens the new invoice creation screen.
+#
+
+Invoice\ Create:
+The "Create" button allows you to generate a new invoice from scratch by pulling data from the system. The "Recreate" button is used to update existing invoices if changes have been made to the system's data.
+
+#
+
+Invoice Managament\ SD Payments:
+This section allows the analysis of past invoices by parsing them. It facilitates the analysis of invoices that were created in the past. For example, you can analyze how many invoices were canceled or corrected within a month. In addition to canceled or corrected invoices, other details within the invoice can also be examined.
+
+In the actions column on the right side of the table, you can perform operations such as approving, viewing as PDF, and previewing. The search button in the top right allows for searching within the table. The button in the bottom right provides options to change the table view to display 10, 25, 50, or 100 rows. The preview button directs the user to a page where the invoice can be viewed and edited.
+#
+
+Invoice Cancellation:
+You can upload the invoice you wish to cancel here to complete the process.
+
+Invoice Correction:
+After specifying the parameter you want to correct (corrector or storno), you can upload the invoice and complete the process.
+#
+
+
+Contract Management Module\ Contract List:
+The Contract List section displays the agreements made by the organization with various stakeholders, contributing to the digitalization of internal processes. The button at the bottom right allows you to adjust the table view to display 10, 25, 50, or 100 rows. In the top right, you will find buttons for filtering, searching, and adding. By clicking the filter button, you can quickly access the desired contract through in-table filtering.
+
+The search button provides a quick search within the table. By clicking the plus button, the user is directed to the new contract creation page. Once the information is filled in and saved, a new contract will be prepared.
+
+#
+
+Contract Management Module\ Contract Table Data Entry:
+In this section, you can define, manage, and track contracts of different types and categories. Contracts can be sorted and viewed based on counterparty, communication, contract type, address, bank details, prepayment, and compensation information. Contract management provides an important tool for digitalizing and organizing various business processes. This allows you to track agreements made with different stakeholders, manage contract durations, and access contract details when necessary. It is crucial for increasing operational efficiency and managing business processes more effectively.
+
+Select the type of contract you want to view from the buttons located just above the tabs on the top left.
+
+
+#
+Contract Management Module\ Contract Table Data Entry:
+
+Filtering and search functionality allows you to quickly access the information you're looking for within the table. The action column on the right side of the tables provides options to edit or delete the row's data.
+
+The add button allows you to enter data into any tab within the table.
+
+Bwe Interface: This is an interface where the interface information is defined.
+
+Bwe Responsible Person: The person who records fault information is kept on file.
+
+Main Data Email: This input holds the email information of the individuals responsible for the defined data.
+
+#
+
+Contract Management Module\ Agreement Entry:
+These screens are used for entering data on agreements made with counterparties. Here, the details of agreements made with our customers, such as product information, trade agreements, year, etc., are entered into the system, defining the agreement details.
+
+The page presents you with trade and hedge tabs. To view or edit the related transactions, proceed with the respective tab. The buttons at the top right of the table allow you to search, upload, and add entries. You can change the sorting order of the columns by clicking the arrows next to the column headers. The action column on the right side of the tables allows you to edit or delete the row's data.
+
+The upload button at the top right of the table provides access to the screen shown above. You can download a sample template from here. After filling in or editing the Excel file, you can upload it here to perform a bulk entry of agreements.
+
+If you want to create agreement details one by one, click the plus button at the top right of the table to navigate to the new creation page. After filling in the required fields and clicking the save button, the agreement creation will be completed.
+
+#
+
+Contract Management Module\ ETRM:
+ETRM (Energy Trading Risk Management) is a platform designed to optimize energy trading and risk management processes. This platform increases efficiency by integrating trading, risk assessment, and compliance activities in energy markets. You can edit or delete rows using the action column on the right side of the table. The plus button at the top right allows you to create a new ETRM. You can quickly access the information you're looking for using the search button within the table. The button at the bottom right lets you adjust the table view to display 10, 25, 50, or 100 rows.
+
+When creating a new ETRM, you must fill in the required fields. There is a table at the bottom right of the page that shows the expected cash flow, allowing you to perform necessary checks. Once you click the "Create" button, a notification will be sent to your manager for approval.
+
+#
+
+Power Plant Management Module:
+This section allows users to visualize real-time production data from power plants and view their locations on a map. The following data and features are available on this screen:
+
+Live production data is visualized as dynamic graphs and dashboards using Grafana. This enables users to easily track production trends and real-time production values.
+
+Power Plant Map:
+The locations of power plants are marked on a map and presented to the user visually. Information such as production capacity and real-time production values for each power plant can be accessed by clicking on the markers on the map. Real-time production data for the power plants is continuously monitored. This data allows for real-time control of production processes and enables quick intervention in case of potential issues.
+
+Power Plant Status:
+This screen provides access to the daily valid data ratios for power plants. Tools that analyze data accuracy and success rates allow you to evaluate data quality and integration success.
+
+Live Power Plant Data:
+Live production data is automatically updated at specific intervals and reflected on the screen. When anomalies in the production data are detected, alarm and notification systems are triggered. By using the button in the top left, you can select the desired power plant and VPP forecast name to access the relevant information.
+
+#
+
+My Screens:
+The "My Screens" menu consists entirely of widgets that users can customize according to their preferences. After creating and saving the desired screen combinations, users can access their personalized screens. EWMS also allows the creation and saving of multiple screens.
+
+When creating a new screen, the application will guide you to the relevant page. After naming the screen, you can optionally add a description. If you prefer to view charts in a specific layout, you can make your selection accordingly. After clicking the add button, your screen is ready to be personalized.
+
+To add a new widget, click the plus button. On the screen that appears, enter the name you want to assign in the label section. Select the data chart you wish to add from the available widgets. After writing any desired description, click add to save the updated screen.
+
+#
+
+Research/Query:
+EWMS GPT is a search and matching service based on GPT (Generative Pre-trained Transformer) developed for users who want access to data within the systems. This service categorizes the data based on user requests, allowing searches to be conducted and providing analyzed results to the users. Through this service, users can query according to the categories they are interested in and download the results in various formats, such as Excel.
+
+The centralized search system, EWMS GPT, processes the user’s request and performs the necessary categorization via the central search system. This categorization enables more effective filtering and sorting of the data.
+
+#
+
+Market & News:
+The service defined as "Market & News" is a module that tracks real-time developments and news specific to the energy sector through third-party services and integrates this data into the system. Thanks to the integration of this module, users can follow the latest developments in the energy market, changes in supply and demand, updates on investments in renewable energy sources, and changes in energy policies in real time. Additionally, they can access in-depth information such as changes in energy prices, market analyses, and expert opinions.
+
+In the resources section, you can find the Energy Market Report published weekly by Energy IQ. Reports from previous weeks are also accessible within the same page.
+
+#
+
+Today:
+The "Today" page allows users to customize it according to the data they want to see. This service is designed to enable users to quickly access the data they wish to view, with the goal of facilitating the daily tracking of the market.
+
+On the blank screen, after selecting the desired date or date range from the date section in the top left, the desired table is selected. The requested data will then appear on the screen in both chart and table formats.
+
+#
+
+Profile:
+In the profile section, users can create new alarms, view previously created alarms, and access general settings of EWMS and their profile information. The language preference can be set from this section, and the user's role can also be viewed here. If the user wishes to log out, they should use the log out button located at the bottom of the page.
+
+Previously created alarms are displayed on this page. A new alarm can be created using the button located at the bottom right.
+
+To create an alarm, give it a name, and select an indicator. Then, fill in the conditions under which the price will trigger the alarm. The notification channel through which the user will be notified when the condition is met is also selected. Once completed, the alarm creation process is finished. After defining the indicators, they will be displayed as market data (e.g., PTF, UEVM).
+
+#
+
+Notifications:
+This service includes how notifications are sent to users and how notification settings are configured. Through this service, users can create customized notification systems and use them for communication between teams. This feature not only enhances the user experience but also makes intra-team communication more effective. Notification settings can be customized according to user preferences, aiming to provide a user-friendly interface.
+
+By using color-coded alarms, users can quickly see where each notification is coming from and easily understand the priority order.
+
+
 
