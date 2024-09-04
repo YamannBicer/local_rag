@@ -26,34 +26,40 @@ derinlemesine analiz ve raporlama, canlı veri akışı, dış kaynak yönetimi,
 faturalandırma, santral yönetimi ve bildirim kanallarının yönetiminin nasıl
 yapılacağı hakkında bilgi vermektedir. Yönetim, finans, ticaret, operasyon ve
 santral birimlerindeki kullanıcılar için hazırlanmıştır.
+
+
 2. Uygulamaya Nasıl Giriş Yapılır?
 EWMS’te oturum açmak için https://ewms.io/login bağlantısını kullanabilirsiniz.
 Hesabınız oluşturulduğunda size account@ewms.io adresinden e-posta ile iletilen
 şifre ile giriş yapınız.
-4
+
 Şifrenizi unuttuğunuz durumda şifremi unuttum butonuna tıklayınız. Kayıtlı olan eposta adresinizi yazınız. Yeni şifreniz e-posta adresinize gönderilecektir.
 Sonrasında e-postanıza gelen doğrulama koduyla platforma giriş sağlayabilirsiniz.
 Bu süreçte bir sorunla karşılaşırsanız info@ewms.io adresine bir e-posta
 göndermeniz yeterli.
-5
+
 Uygulamaya giriş yaptıktan sonra sizi ana ekran karşılayacaktır. Bu ekranda
 platformun sağladığı imkanlara hızlıca göz gezdirebilirsiniz.
+
 3. Uygulamaya Genel Bakış
-6
+
 3.1. Ana Menü
 Ana Menü’den platformun sağladığı tüm hizmetlere ulaşmak mümkündür. EWMS, 8
 ana başlıktan oluşan menüden Raporlar, Ticaret Yönetimi, Job Monitoring, Job Data
 Entry, Log Görüntüleyici, Fatura Yönetimi, Sözleşme Yönetimi ve Enerji Santrali
 Yönetimi servislerine ulaşabilme imkanı sunar.
-3.1.1. Raporlar
-Mesitro Control
+
+3.1.1. Raporlar\ Mesitro Control, Pure DE, GÖP Control, Conciliation, TR Curtailment, TR P&L, Algopoly Performance raporlarını içerir
+
+Raporlar\Mesitro Control
 Meistro tarafından gönderilen veriler ile Pure’un verilerini karşılaştırmak ve olası
 farkları saptamak için kullanılmaktadır.
-Pure DE
+
+Raporlar\Pure DE
 Meistro tarafından gönderilen veriler ile Pure’un verilerini karşılaştırmak ve olası
 farkları saptamak için kullanılmaktadır.
-7
-GÖP Control
+
+Raporlar\GÖP Control
 GÖP Control raporu operasyon ekibinin GÖP girişlerinde yapılan hataların tespiti için
 kullanılmaktadır. Son ayın organizasyon bazında saatlik olarak tahmin, gün içi
 işlemleri ve ikili anlaşma miktarlarının toplamı verisini içerir. Bu toplamın 0’dan büyük
@@ -61,36 +67,41 @@ olması GÖP girişindeki hataları gösterir. Hatanın sebebinin veri eksikliğ
 olup olmadığını anlayabilmek için “Data Check” sayfasındaki ham veri tablosundan
 kontrol yapılabilir. Ayrıca bu tarihlerdeki istisnai durumlar, eğer varsa, bu sayfadaki
 “Exceptions” tablosunda görülebilir.
-Conciliation
+
+Raporlar\Conciliation
 Uzlaştırma raporları, finansal ve operasyonel verilerin uzlaştırılması için kullanılır. Bu
 raporlar, farklı veri kaynaklarından gelen bilgilerin tutarlılığını ve doğruluğunu kontrol
 eder. Uzlaştırma süreci, şirketin mali ve operasyonel uyumunu sağlamak için kritik
 öneme sahiptir.
-8
-TR Curtailment
+
+
+Raporlar\TR Curtailment
 Bu rapor Pure portföyünde yapılan kesinti yüzdelerinin takibi için oluşturulmuştur.
 Rapordaki veriler ay başından bulunduğumuz günün 2 gün öncesine kadarki süreyi
 içerir. Geçmişe dönük verileri görmek için istenilen tarih “Enter Current Date” kısmına
 yazılarak “Reload Data” butonu ile tekrardan veri çekişi yapılabilir. Geçerli tarih aralığı
 sayfanın sağ üst köşesinde görünecektir.
+
 TR P&L
 Türkiye P&L Rapor, gün içi piyasasında (GİP) yapılan işlemleri kullanılarak TR-Ticaret
 ekibinin P&L’lerini ve GİP de gerçekleşen tüm piyasa işlemlerinin detaylı analizini
 içeren rapordur. 8 Ana sayfadan oluşur.
-9
+
 Algopoly Performance
 Bu rapor Algopoly’nin aylık faturalandırılmasını otomatikleştirmek için
 oluşturulmuştur. Algopoly tahminlerinin emsys tahminlerine göre performansını bellirli
 metriklerle günlük ve aylık bazda hesaplayıp Algopoly’e ödenecek hizmet bedelini
 belirler. Aynı zamanda Algopoly ve emsys tahmin performanslarını karşılaştıran ve
 günlük küpast miktarını gösteren grafikleri içerir.
+
+
 3.1.2. Ticaret Yönetimi
 Gün İçi Ticaret
 Ticaret ekipleri tarafından kullanılabilecek ekrandır. Yayınlanan dengesizlikleri ve
 dengesizlik fiyatları takip edilip dengesizlikleri, iletim sistem operatörü (TSO) ve
 komponent ölçeğinde inceleyip hızlıca analiz edebilmesini sağlar. Karar alma
 süreçlerinde kullanılan verilerin tek bir ekranda toplayıp inceleme imkanı sunar.
-10
+
 Arz Talep
 Kullanılan bütün veri sağlayacılarından gelen güneş, rüzgar ve yük tahminlerine
 ulaşılmasını sağlayan bu ekranın, sol üstünde bulunan takvim bölümünden geçmişe
@@ -100,7 +111,7 @@ Sistem yönündeki trendleri hızlıca analiz etmek için kullanılan bu ekran, 
 çeyrekte ne olmuş gibi bilgilerle hızlı trend takibi imkanı sunar. Yine sol üstte bulunan
 takvimden tarih aralığını belirlenebilirken sağ üstte bulunan “clear selection”
 butonuyla filtreleme seçimlerini kaldırma olanağı sunar.
-11
+
 3.1.3. İş İzleme Modülü
 Bu modül, mevcut işlerin durumlarını izlemenizi sağlarken betik tanımlayarak özel
 işlemlerin belirli koşullar altında otomatik olarak gerçekleştirilmesini ve ilgili kişilere

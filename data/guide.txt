@@ -19,4 +19,25 @@ Section 3.5: Today
 Section 3.6: Profile
 Section 3.7: Notifications
 
+#
+
+Who Should Use This Guide?
+This guide provides information on how to manage market tracking, transaction
+management, in-depth analysis and reporting, live data streaming, external resource
+management, billing, power plant management, and notification channels through
+the EWMS application, an integrated solution platform designed for the energy sector.
+It is prepared for users in management, finance, trading, operations, and power plant units.
+
+#
+
+How to Log into the Application?
+You can log into EWMS by using the link https://ewms.io/login. Once your account is created, log in using the password sent to you via email from account@ewms.io.
+If you forget your password, click the "Forgot Password" button. Enter your registered email address, and a new password will be sent to your email. Afterward, you can log into the platform using the verification code sent to your email. If you encounter any issues during this process, simply send an email to info@ewms.io.
+Once you log into the application, you will be greeted by the main screen, where you can quickly review the features provided by the platform.
+
+#
+Main Menu:
+From the Main Menu, you can access all the services provided by the platform.
+EWMS offers access to the following services through a menu consisting of 8 main sections:
+Reports, Trade Management, Job Monitoring, Job Data Entry, Log Viewer, Invoice Management, Contract Management, and Power Plant Management.
 
