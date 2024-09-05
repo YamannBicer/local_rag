@@ -1,6 +1,5 @@
 from langchain.prompts import ChatPromptTemplate
 from langchain_ollama import ChatOllama
-from langchain_ollama.llms import OllamaLLM
 from langchain_chroma import Chroma
 from get_embedding_function import get_embedding_function
 
@@ -20,7 +19,11 @@ Answer the question based on the above context: {input}
 def main():
     while True:
         query_text = input("Message ChatBot: ")
-        query_chatbot(query_text)
+        response, sources = query_chatbot(query_text)
+        print(f"Query: {query_text}")
+        print(f"Response: {response}")
+        print("Sources: ", *sources, "\n\n\n")
+
 
 
 def query_chatbot(query_text: str):
@@ -49,12 +52,8 @@ def query_chatbot(query_text: str):
     chat = ChatOllama(model="llama3.1",temperature=0)
     response_text = chat.invoke(prompt)
 
-    print(f"Query: {query_text}")
-    print( f"Response: {response_text.content}")
-    print("Sources: ",*sources, "\n\n\n")
 
-    return
-
+    return response_text.content, sources
 
 if __name__ == "__main__":
     main()
