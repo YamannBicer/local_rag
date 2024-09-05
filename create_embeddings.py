@@ -5,12 +5,12 @@ from chunks import index_chunks, inspect_chunks
 
 
 def main():
-    # documents = load_documents()
-    # chunks = split_documents_with_special_character(documents)
-    # chunks = index_chunks(chunks)
+    documents = load_documents()
+    chunks = split_documents_with_special_character(documents)
+    chunks = index_chunks(chunks)
     # inspect_chunks(chunks)
-    # add_to_chroma(chunks)
-    inspect_chroma()
+    add_to_chroma(chunks)
+    # inspect_chroma()
 
 
 if __name__ == "__main__":
