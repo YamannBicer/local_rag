@@ -13,17 +13,15 @@ def fetch_response():
             response, sources = query_chatbot(query_text, st.session_state.chat_history)
 
         st.session_state.chat_history += f"User: {query_text}\nAssistant: {response}\n\n"
-        st.session_state.display_history  += f"User: {query_text}\n\nChatBot: {response}\n\nSources: {sources}\n\n"
-
+        # st.session_state.display_history  += f"User: {query_text}\n\nChatBot: {response}\n\nSources: {sources}\n\n"
 
         st.session_state.user_input = ""
 
 def main():
     # Initialize session state variables if they don't exist
-    if "display_history" not in st.session_state:
-        st.session_state.display_history = ""
-    if "chat_history" not in st.session_state:
-        st.session_state.chat_history = ""
+    # if "display_history" not in st.session_state: st.session_state.display_history = ""
+    if "chat_history" not in st.session_state: st.session_state.chat_history = ""
+
 
     st.title("EWMS ChatBot")
 

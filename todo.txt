@@ -1,3 +1,6 @@
 langgraph
 adjust prompt templates
 keyword search
+start logging queries and responses in a txt file and store it in a vector database also develop a system tag the responses quality with RLHF
+csv agent - text2SQL
+
