@@ -1,108 +1,108 @@
-meta_id;data_type;curve_name;instance_tag;destination_table;schedule;name
-1;time_series;DE Wind Power Production MWh/h 15min Actual;;eq_ts_production;17 * * * *;de_wind_production_actual
-2;time_series;DE Wind Power Production Onshore MWh/h 15min Actual;;eq_ts_production;17 * * * *;de_wind_onshore_production_actual
-3;time_series;DE Wind Power Production Offshore MWh/h 15min Actual;;eq_ts_production;17 * * * *;de_wind_offshore_production_actual
-4;time_series;DE Solar Photovoltaic Production MWh/h 15min Actual;;eq_ts_production;17 * * * *;de_solar_production_actual
-5;time_series;DE Natural Gas Power Production MWh/h 15min Actual;;eq_ts_production;17 * * * *;de_natural_gas_production_actual
-6;time_series;DE Hard Coal Power Production MWh/h 15min Actual;;eq_ts_production;17 * * * *;de_hard_coal_production_actual
-7;time_series;DE Lignite Power Production MWh/h 15min Actual;;eq_ts_production;18 * * * *;de_lignite_production_actual
-8;time_series;DE Biomass Power Production MWh/h 15min Actual;;eq_ts_production;18 * * * *;de_biomass_production_actual
-9;time_series;DE Hydro Pumped-storage Production MWh/h 15min Actual;;eq_ts_production;18 * * * *;de_hydro_pumped_storage_production_actual
-10;time_series;DE Hydro Run-of-river Production MWh/h 15min Actual;;eq_ts_production;18 * * * *;de_hydro_run_of_river_production_actual
-11;time_series;DE Consumption MWh/h 15min Actual;;eq_ts_consumption;18 * * * *;de_consumption_actual
-12;time_series;DE Price Imbalance Single EUR/MWh 15min Backcast;;eq_ts_price;1 0 * * *;de_price_imbalance_single_backcast
-13;time_series;DE Price Imbalance Single Final EUR/MWh 15min Actual;;eq_ts_price;1 0 * * *;de_price_imbalance_single_final_actual
-14;time_series;DE Price Spot EUR/MWh EPEX H Actual;;eq_ts_price;0,15,30 16,17 * * *;de_price_spot_actual
-15;time_series;DE Price Intraday VWAP ID1 EUR/MWh EPEX 15min Actual;;eq_ts_price;0,15,30,45 * * * *;de_price_intraday_vwap_id1_15_min_actual
-16;time_series;DE Price Intraday VWAP ID1 EUR/MWh EPEX H Actual;;eq_ts_price;55 0,1 * * *;de_price_intraday_vwap_id1_hourly_actual
-17;time_series;DE Price Intraday VWAP ID3 EUR/MWh EPEX 15min Actual;;eq_ts_price;0,15,30,45 * * * *;de_price_intraday_vwap_id3_15_min_actual
-18;time_series;DE Price Intraday VWAP ID3 EUR/MWh EPEX H Actual;;eq_ts_price;55 0,1 * * *;de_price_intraday_vwap_id3_hourly_actual
-19;time_series;DE Price Intraday VWAP EUR/MWh EPEX H Actual;;eq_ts_price;55 0,1 * * *;de_price_intraday_vwap_hourly_actual
-20;time_series;DE Price Intraday VWAP EUR/MWh EPEX 15min Actual;;eq_ts_price;55 0,1 * * *;de_price_intraday_vwap_15_min_actual
-21;time_series;DE Volume Intraday Auction IDA1 MWh EPEX 15min Actual;;eq_ts_volume;55 0,1 * * *;de_volume_intraday_auction_ida1_actual
-22;time_series;DE Volume Spot MWh EPEX H Actual;;eq_ts_volume;55 0,1 * * *;de_volume_spot_actual
-23;time_series;DE Volume Imbalance Net MWh 15min Actual;;eq_ts_volume;0 18 * * *;de_volume_imbalance_net_actual
-24;time_series;NL Price Spot EUR/MWh EPEX H Actual;;eq_ts_price;0 18 * * *;nl_price_spot_actual
-25;time_series;AT Price Spot EUR/MWh EPEX H Actual;;eq_ts_price;0,15,30,45 * * * *;at_price_spot_actual
-26;time_series;BE Price Spot EUR/MWh EPEX H Actual;;eq_ts_price;0,30 14,15 * * *;be_price_spot_actual
-27;time_series;FR Price Spot EUR/MWh EPEX H Actual;;eq_ts_price;0 18 * * *;fr_price_spot_actual
-28;instance_series;DE Consumption MWh/h 15min Forecast;ecsr;eq_ins_consumption;3 */6 * * *;de_consumption_ecsr_forecast
-29;instance_series;DE Consumption MWh/h 15min Forecast;ec;eq_ins_consumption;3 */6 * * *;de_consumption_ec_forecast
-30;instance_series;DE Consumption MWh/h 15min Forecast;iconsr;eq_ins_consumption;3 */6 * * *;de_consumption_iconsr_forecast
-31;instance_series;DE Consumption MWh/h 15min Forecast;icon;eq_ins_consumption;3 */6 * * *;de_consumption_icon_forecast
-32;instance_series;DE Consumption MWh/h 15min Forecast;gfs;eq_ins_consumption;3 */6 * * *;de_consumption_gfs_forecast
-33;instance_series;DE Price Spot EUR/MWh H Forecast;postfix;eq_ins_price;3 */6 * * *;de_price_spot_postfix_forecast
-34;instance_series;DE Price Spot EUR/MWh H Forecast;prefix;eq_ins_price;3 */6 * * *;de_price_spot_prefix_forecast
-35;instance_series;DE-TenneT Wind Power Production MWh/h 15min Forecast;ecsr;eq_ins_production;3 */6 * * *;de_tennet_wind_power_ecsr_production_forecast
-36;instance_series;DE-TenneT Wind Power Production MWh/h 15min Forecast;ec;eq_ins_production;3 */6 * * *;de_tennet_wind_power_ec_production_forecast
-37;instance_series;DE-TenneT Wind Power Production MWh/h 15min Forecast;iconsr;eq_ins_production;3 */6 * * *;de_tennet_wind_power_iconsr_production_forecast
-38;instance_series;DE-TenneT Wind Power Production MWh/h 15min Forecast;icon;eq_ins_production;3 */6 * * *;de_tennet_wind_power_icon_production_forecast
-39;instance_series;DE-TenneT Wind Power Production MWh/h 15min Forecast;gfs;eq_ins_production;3 */6 * * *;de_tennet_wind_power_gfs_production_forecast
-40;instance_series;DE-50Hertz Wind Power Production MWh/h 15min Forecast;ecsr;eq_ins_production;3 */6 * * *;de_50hertz_wind_power_ecsr_production_forecast
-41;instance_series;DE-50Hertz Wind Power Production MWh/h 15min Forecast;ec;eq_ins_production;3 */6 * * *;de_50hertz_wind_power_ec_production_forecast
-42;instance_series;DE-50Hertz Wind Power Production MWh/h 15min Forecast;iconsr;eq_ins_production;3 */6 * * *;de_50hertz_wind_power_iconsr_production_forecast
-43;instance_series;DE-50Hertz Wind Power Production MWh/h 15min Forecast;icon;eq_ins_production;7 */6 * * *;de_50hertz_wind_power_icon_production_forecast
-44;instance_series;DE-50Hertz Wind Power Production MWh/h 15min Forecast;gfs;eq_ins_production;7 */6 * * *;de_50hertz_wind_power_gfs_production_forecast
-45;instance_series;DE-TransnetBW Wind Power Production MWh/h 15min Forecast;ecsr;eq_ins_production;7 */6 * * *;de_transnetbw_wind_power_ecsr_production_forecast
-46;instance_series;DE-TransnetBW Wind Power Production MWh/h 15min Forecast;ec;eq_ins_production;7 */6 * * *;de_transnetbw_wind_power_ec_production_forecast
-47;instance_series;DE-TransnetBW Wind Power Production MWh/h 15min Forecast;iconsr;eq_ins_production;7 */6 * * *;de_transnetbw_wind_power_iconsr_production_forecast
-48;instance_series;DE-TransnetBW Wind Power Production MWh/h 15min Forecast;icon;eq_ins_production;7 */6 * * *;de_transnetbw_wind_power_icon_production_forecast
-49;instance_series;DE-TransnetBW Wind Power Production MWh/h 15min Forecast;gfs;eq_ins_production;7 */6 * * *;de_transnetbw_wind_power_gfs_production_forecast
-50;instance_series;DE-Amprion Wind Power Production MWh/h 15min Forecast;ecsr;eq_ins_production;7 */6 * * *;de_amprion_wind_power_ecsr_production_forecast
-51;instance_series;DE-Amprion Wind Power Production MWh/h 15min Forecast;ec;eq_ins_production;7 */6 * * *;de_amprion_wind_power_ec_production_forecast
-52;instance_series;DE-Amprion Wind Power Production MWh/h 15min Forecast;iconsr;eq_ins_production;7 */6 * * *;de_amprion_wind_power_iconsr_production_forecast
-53;instance_series;DE-Amprion Wind Power Production MWh/h 15min Forecast;icon;eq_ins_production;7 */6 * * *;de_amprion_wind_power_icon_production_forecast
-54;instance_series;DE-Amprion Wind Power Production MWh/h 15min Forecast;gfs;eq_ins_production;7 */6 * * *;de_amprion_wind_power_gfs_production_forecast
-55;instance_series;DE-TenneT Solar Photovoltaic Production MWh/h 15min Forecast;ecsr;eq_ins_production;7 */6 * * *;de_tennet_solar_power_ecsr_production_forecast
-56;instance_series;DE-TenneT Solar Photovoltaic Production MWh/h 15min Forecast;ec;eq_ins_production;7 */6 * * *;de_tennet_solar_power_ec_production_forecast
-57;instance_series;DE-TenneT Solar Photovoltaic Production MWh/h 15min Forecast;iconsr;eq_ins_production;7 */6 * * *;de_tennet_solar_power_iconsr_production_forecast
-58;instance_series;DE-TenneT Solar Photovoltaic Production MWh/h 15min Forecast;icon;eq_ins_production;7 */6 * * *;de_tennet_solar_power_icon_production_forecast
-59;instance_series;DE-TenneT Solar Photovoltaic Production MWh/h 15min Forecast;gfs;eq_ins_production;7 */6 * * *;de_tennet_solar_power_gfs_production_forecast
-60;instance_series;DE-50Hertz Solar Photovoltaic Production MWh/h 15min Forecast;ecsr;eq_ins_production;13 */6 * * *;de_50hertz_solar_power_ecsr_production_forecast
-61;instance_series;DE-50Hertz Solar Photovoltaic Production MWh/h 15min Forecast;ec;eq_ins_production;13 */6 * * *;de_50hertz_solar_power_ec_production_forecast
-62;instance_series;DE-50Hertz Solar Photovoltaic Production MWh/h 15min Forecast;iconsr;eq_ins_production;13 */6 * * *;de_50hertz_solar_power_iconsr_production_forecast
-63;instance_series;DE-50Hertz Solar Photovoltaic Production MWh/h 15min Forecast;icon;eq_ins_production;13 */6 * * *;de_50hertz_solar_power_icon_production_forecast
-64;instance_series;DE-50Hertz Solar Photovoltaic Production MWh/h 15min Forecast;gfs;eq_ins_production;13 */6 * * *;de_50hertz_solar_power_gfs_production_forecast
-65;instance_series;DE-TransnetBW Solar Photovoltaic Production MWh/h 15min Forecast;ecsr;eq_ins_production;13 */6 * * *;de_transnetbw_solar_power_ecsr_production_forecast
-66;instance_series;DE-TransnetBW Solar Photovoltaic Production MWh/h 15min Forecast;ec;eq_ins_production;13 */6 * * *;de_transnetbw_solar_power_ec_production_forecast
-67;instance_series;DE-TransnetBW Solar Photovoltaic Production MWh/h 15min Forecast;iconsr;eq_ins_production;13 */6 * * *;de_transnetbw_solar_power_iconsr_production_forecast
-68;instance_series;DE-TransnetBW Solar Photovoltaic Production MWh/h 15min Forecast;icon;eq_ins_production;13 */6 * * *;de_transnetbw_solar_power_icon_production_forecast
-69;instance_series;DE-TransnetBW Solar Photovoltaic Production MWh/h 15min Forecast;gfs;eq_ins_production;13 */6 * * *;de_transnetbw_solar_power_gfs_production_forecast
-70;instance_series;DE-Amprion Solar Photovoltaic Production MWh/h 15min Forecast;ecsr;eq_ins_production;13 */6 * * *;de_amprion_solar_power_ecsr_production_forecast
-71;instance_series;DE-Amprion Solar Photovoltaic Production MWh/h 15min Forecast;ec;eq_ins_production;13 */6 * * *;de_amprion_solar_power_ec_production_forecast
-72;instance_series;DE-Amprion Solar Photovoltaic Production MWh/h 15min Forecast;iconsr;eq_ins_production;13 */6 * * *;de_amprion_solar_power_iconsr_production_forecast
-73;instance_series;DE-Amprion Solar Photovoltaic Production MWh/h 15min Forecast;icon;eq_ins_production;13 */6 * * *;de_amprion_solar_power_icon_production_forecast
-74;instance_series;DE-Amprion Solar Photovoltaic Production MWh/h 15min Forecast;gfs;eq_ins_production;13 */6 * * *;de_amprion_solar_power_gfs_production_forecast
-75;instance_series;DE Sensitivity Spot EUR/MWh H Forecast;postfix;eq_ins_price;18 */6 * * *;de_sensitivity_postfix_spot_forecast
-76;instance_series;DE Sensitivity Spot EUR/MWh H Forecast;prefix;eq_ins_price;18 */6 * * *;de_sensitivity_prefix_spot_forecast
-77;instance_series;DE-50Hertz Consumption Index Cloudiness % 15min Forecast;ecsr;eq_ins_weather;18 */6 * * *;de_50hertz_consumption_ecsr_index_cloudiness_forecast
-78;instance_series;DE-50Hertz Consumption Index Cloudiness % 15min Forecast;ec;eq_ins_weather;18 */6 * * *;de_50hertz_consumption_ec_index_cloudiness_forecast
-79;instance_series;DE-50Hertz Consumption Index Cloudiness % 15min Forecast;iconsr;eq_ins_weather;18 */6 * * *;de_50hertz_consumption_iconsr_index_cloudiness_forecast
-80;instance_series;DE-50Hertz Consumption Index Cloudiness % 15min Forecast;icon;eq_ins_weather;18 */6 * * *;de_50hertz_consumption_icon_index_cloudiness_forecast
-81;instance_series;DE-50Hertz Consumption Index Cloudiness % 15min Forecast;gfs;eq_ins_weather;18 */6 * * *;de_50hertz_consumption_gfs_index_cloudiness_forecast
-82;instance_series;DE-Amprion Consumption Index Cloudiness % 15min Forecast;ecsr;eq_ins_weather;18 */6 * * *;de_amprion_consumption_ecsr_index_cloudiness_forecast
-83;instance_series;DE-Amprion Consumption Index Cloudiness % 15min Forecast;ec;eq_ins_weather;18 */6 * * *;de_amprion_consumption_ec_index_cloudiness_forecast
-84;instance_series;DE-Amprion Consumption Index Cloudiness % 15min Forecast;iconsr;eq_ins_weather;18 */6 * * *;de_amprion_consumption_iconsr_index_cloudiness_forecast
-85;instance_series;DE-Amprion Consumption Index Cloudiness % 15min Forecast;icon;eq_ins_weather;18 */6 * * *;de_amprion_consumption_icon_index_cloudiness_forecast
-86;instance_series;DE-Amprion Consumption Index Cloudiness % 15min Forecast;gfs;eq_ins_weather;18 */6 * * *;de_amprion_consumption_gfs_index_cloudiness_forecast
-87;instance_series;DE-TenneT Consumption Index Cloudiness % 15min Forecast;ecsr;eq_ins_weather;18 */6 * * *;de_tennet_consumption_ecsr_index_cloudiness_forecast
-88;instance_series;DE-TenneT Consumption Index Cloudiness % 15min Forecast;ec;eq_ins_weather;18 */6 * * *;de_tennet_consumption_ec_index_cloudiness_forecast
-89;instance_series;DE-TenneT Consumption Index Cloudiness % 15min Forecast;iconsr;eq_ins_weather;18 */6 * * *;de_tennet_consumption_iconsr_index_cloudiness_forecast
-90;instance_series;DE-TenneT Consumption Index Cloudiness % 15min Forecast;icon;eq_ins_weather;18 */6 * * *;de_tennet_consumption_icon_index_cloudiness_forecast
-91;instance_series;DE-TenneT Consumption Index Cloudiness % 15min Forecast;gfs;eq_ins_weather;18 */6 * * *;de_tennet_consumption_gfs_index_cloudiness_forecast
-92;instance_series;DE-TransnetBW Consumption Index Cloudiness % 15min Forecast;ecsr;eq_ins_weather;18 */6 * * *;de_transnetbw_consumption_ecsr_index_cloudiness_forecast
-93;instance_series;DE-TransnetBW Consumption Index Cloudiness % 15min Forecast;ec;eq_ins_weather;18 */6 * * *;de_transnetbw_consumption_ec_index_cloudiness_forecast
-94;instance_series;DE-TransnetBW Consumption Index Cloudiness % 15min Forecast;iconsr;eq_ins_weather;18 */6 * * *;de_transnetbw_consumption_iconsr_index_cloudiness_forecast
-95;instance_series;DE-TransnetBW Consumption Index Cloudiness % 15min Forecast;icon;eq_ins_weather;18 */6 * * *;de_transnetbw_consumption_icon_index_cloudiness_forecast
-96;instance_series;DE-TransnetBW Consumption Index Cloudiness % 15min Forecast;gfs;eq_ins_weather;18 */6 * * *;de_transnetbw_consumption_gfs_index_cloudiness_forecast
-97;time_series;DE Hydro Reservoir Production MWh/h 15min Actual;;eq_ts_production;3 0 * * *;de_hydro_reservoir_production_actual
-98;time_series;DE Consumption Temperature °C H Actual;;eq_ts_weather;3 0 * * *;de_consumption_temperature_actual
-99;time_series;DE Volume Intraday Auction IDA2 MWh EPEX 15min Actual;;eq_ts_volume;55 0,1 * * *;de_volume_intraday_auction_ida2_actual
-100;time_series;DE Volume Intraday Auction IDA3 MWh EPEX 15min Actual;;eq_ts_volume;55 0,1 * * *;de_volume_intraday_auction_ida3_actual
-101;time_series;DE Price Intraday Auction IDA1 EUR/MWh EPEX 15min Actual;;eq_ts_price;0,15,30 16,17 * * *;de_price_intraday_auction_ida1_actual
-102;time_series;DE Price Intraday Auction IDA2 EUR/MWh EPEX 15min Actual;;eq_ts_price;10,20,30,40 22 * * *;de_price_intraday_auction_ida2_actual
-103;time_series;DE Price Intraday Auction IDA3 EUR/MWh EPEX 15min Actual;;eq_ts_price;10,20,30,40 10 * * *;de_price_intraday_auction_ida3_actual
-104;time_series;DE Exchange Day-Ahead Schedule Net Export MWh/h H Actual;;eq_ts_volume;10,20,30,40 10 * * *;de_exchange_da_schedule_net_export_actual
-105;instance_series;DE Exchange Day-Ahead Schedule Net Export MWh/h H Forecast;prefix;eq_ins_price;18 */6 * * *;de_exchange_da_schedule_net_export_prefix_forecast
-106;instance_series;DE Exchange Day-Ahead Schedule Net Export MWh/h H Forecast;postfix;eq_ins_price;18 */6 * * *;de_exchange_da_schedule_net_export_postfix_forecast
-107;time_series;DE Price Imbalance Single EUR/MWh 15min Actual;;eq_ts_price;10,20,30,40 10 * * *;de_price_imbalance_single_15min_actual
+meta_id;data_type;curve_name;instance_tag;date_from;date_to;destination_table;schedule;name
+1;time_series;DE Wind Power Production MWh/h 15min Actual;;-2800;2800;eq_ts_production;17 * * * *;de_wind_production_actual
+2;time_series;DE Wind Power Production Onshore MWh/h 15min Actual;;-2800;2800;eq_ts_production;17 * * * *;de_wind_onshore_production_actual
+3;time_series;DE Wind Power Production Offshore MWh/h 15min Actual;;-2800;2800;eq_ts_production;17 * * * *;de_wind_offshore_production_actual
+4;time_series;DE Solar Photovoltaic Production MWh/h 15min Actual;;-2800;2800;eq_ts_production;17 * * * *;de_solar_production_actual
+5;time_series;DE Natural Gas Power Production MWh/h 15min Actual;;-2800;2800;eq_ts_production;17 * * * *;de_natural_gas_production_actual
+6;time_series;DE Hard Coal Power Production MWh/h 15min Actual;;-2800;2800;eq_ts_production;17 * * * *;de_hard_coal_production_actual
+7;time_series;DE Lignite Power Production MWh/h 15min Actual;;-2800;2800;eq_ts_production;18 * * * *;de_lignite_production_actual
+8;time_series;DE Biomass Power Production MWh/h 15min Actual;;-2800;2800;eq_ts_production;18 * * * *;de_biomass_production_actual
+9;time_series;DE Hydro Pumped-storage Production MWh/h 15min Actual;;-2800;2800;eq_ts_production;18 * * * *;de_hydro_pumped_storage_production_actual
+10;time_series;DE Hydro Run-of-river Production MWh/h 15min Actual;;-2800;2800;eq_ts_production;18 * * * *;de_hydro_run_of_river_production_actual
+11;time_series;DE Consumption MWh/h 15min Actual;;-2800;2800;eq_ts_consumption;18 * * * *;de_consumption_actual
+12;time_series;DE Price Imbalance Single EUR/MWh 15min Backcast;;-28000;2800;eq_ts_price;1 0 * * *;de_price_imbalance_single_backcast
+13;time_series;DE Price Imbalance Single Final EUR/MWh 15min Actual;;-280000;2800;eq_ts_price;1 0 * * *;de_price_imbalance_single_final_actual
+14;time_series;DE Price Spot EUR/MWh EPEX H Actual;;-2800;2800;eq_ts_price;0,15,30 16,17 * * *;de_price_spot_actual
+15;time_series;DE Price Intraday VWAP ID1 EUR/MWh EPEX 15min Actual;;-2800;2800;eq_ts_price;0,15,30,45 * * * *;de_price_intraday_vwap_id1_15_min_actual
+16;time_series;DE Price Intraday VWAP ID1 EUR/MWh EPEX H Actual;;-2800;2800;eq_ts_price;55 0,1 * * *;de_price_intraday_vwap_id1_hourly_actual
+17;time_series;DE Price Intraday VWAP ID3 EUR/MWh EPEX 15min Actual;;-2800;2800;eq_ts_price;0,15,30,45 * * * *;de_price_intraday_vwap_id3_15_min_actual
+18;time_series;DE Price Intraday VWAP ID3 EUR/MWh EPEX H Actual;;-2800;2800;eq_ts_price;55 0,1 * * *;de_price_intraday_vwap_id3_hourly_actual
+19;time_series;DE Price Intraday VWAP EUR/MWh EPEX H Actual;;-2800;2800;eq_ts_price;55 0,1 * * *;de_price_intraday_vwap_hourly_actual
+20;time_series;DE Price Intraday VWAP EUR/MWh EPEX 15min Actual;;-2800;2800;eq_ts_price;55 0,1 * * *;de_price_intraday_vwap_15_min_actual
+21;time_series;DE Volume Intraday Auction IDA1 MWh EPEX 15min Actual;;-2800;2800;eq_ts_volume;55 0,1 * * *;de_volume_intraday_auction_ida1_actual
+22;time_series;DE Volume Spot MWh EPEX H Actual;;-2800;2800;eq_ts_volume;55 0,1 * * *;de_volume_spot_actual
+23;time_series;DE Volume Imbalance Net MWh 15min Actual;;-2800;2800;eq_ts_volume;0 18 * * *;de_volume_imbalance_net_actual
+24;time_series;NL Price Spot EUR/MWh EPEX H Actual;;-2800;2800;eq_ts_price;0 18 * * *;nl_price_spot_actual
+25;time_series;AT Price Spot EUR/MWh EPEX H Actual;;-2800;2800;eq_ts_price;0,15,30,45 * * * *;at_price_spot_actual
+26;time_series;BE Price Spot EUR/MWh EPEX H Actual;;-2800;2800;eq_ts_price;0,30 14,15 * * *;be_price_spot_actual
+27;time_series;FR Price Spot EUR/MWh EPEX H Actual;;-2800;2800;eq_ts_price;0 18 * * *;fr_price_spot_actual
+28;instance_series;DE Consumption MWh/h 15min Forecast;ecsr;;;eq_ins_consumption;3 */6 * * *;de_consumption_ecsr_forecast
+29;instance_series;DE Consumption MWh/h 15min Forecast;ec;;;eq_ins_consumption;3 */6 * * *;de_consumption_ec_forecast
+30;instance_series;DE Consumption MWh/h 15min Forecast;iconsr;;;eq_ins_consumption;3 */6 * * *;de_consumption_iconsr_forecast
+31;instance_series;DE Consumption MWh/h 15min Forecast;icon;;;eq_ins_consumption;3 */6 * * *;de_consumption_icon_forecast
+32;instance_series;DE Consumption MWh/h 15min Forecast;gfs;;;eq_ins_consumption;3 */6 * * *;de_consumption_gfs_forecast
+33;instance_series;DE Price Spot EUR/MWh H Forecast;postfix;;;eq_ins_price;3 */6 * * *;de_price_spot_postfix_forecast
+34;instance_series;DE Price Spot EUR/MWh H Forecast;prefix;;;eq_ins_price;3 */6 * * *;de_price_spot_prefix_forecast
+35;instance_series;DE-TenneT Wind Power Production MWh/h 15min Forecast;ecsr;;;eq_ins_production;3 */6 * * *;de_tennet_wind_power_ecsr_production_forecast
+36;instance_series;DE-TenneT Wind Power Production MWh/h 15min Forecast;ec;;;eq_ins_production;3 */6 * * *;de_tennet_wind_power_ec_production_forecast
+37;instance_series;DE-TenneT Wind Power Production MWh/h 15min Forecast;iconsr;;;eq_ins_production;3 */6 * * *;de_tennet_wind_power_iconsr_production_forecast
+38;instance_series;DE-TenneT Wind Power Production MWh/h 15min Forecast;icon;;;eq_ins_production;3 */6 * * *;de_tennet_wind_power_icon_production_forecast
+39;instance_series;DE-TenneT Wind Power Production MWh/h 15min Forecast;gfs;;;eq_ins_production;3 */6 * * *;de_tennet_wind_power_gfs_production_forecast
+40;instance_series;DE-50Hertz Wind Power Production MWh/h 15min Forecast;ecsr;;;eq_ins_production;3 */6 * * *;de_50hertz_wind_power_ecsr_production_forecast
+41;instance_series;DE-50Hertz Wind Power Production MWh/h 15min Forecast;ec;;;eq_ins_production;3 */6 * * *;de_50hertz_wind_power_ec_production_forecast
+42;instance_series;DE-50Hertz Wind Power Production MWh/h 15min Forecast;iconsr;;;eq_ins_production;3 */6 * * *;de_50hertz_wind_power_iconsr_production_forecast
+43;instance_series;DE-50Hertz Wind Power Production MWh/h 15min Forecast;icon;;;eq_ins_production;7 */6 * * *;de_50hertz_wind_power_icon_production_forecast
+44;instance_series;DE-50Hertz Wind Power Production MWh/h 15min Forecast;gfs;;;eq_ins_production;7 */6 * * *;de_50hertz_wind_power_gfs_production_forecast
+45;instance_series;DE-TransnetBW Wind Power Production MWh/h 15min Forecast;ecsr;;;eq_ins_production;7 */6 * * *;de_transnetbw_wind_power_ecsr_production_forecast
+46;instance_series;DE-TransnetBW Wind Power Production MWh/h 15min Forecast;ec;;;eq_ins_production;7 */6 * * *;de_transnetbw_wind_power_ec_production_forecast
+47;instance_series;DE-TransnetBW Wind Power Production MWh/h 15min Forecast;iconsr;;;eq_ins_production;7 */6 * * *;de_transnetbw_wind_power_iconsr_production_forecast
+48;instance_series;DE-TransnetBW Wind Power Production MWh/h 15min Forecast;icon;;;eq_ins_production;7 */6 * * *;de_transnetbw_wind_power_icon_production_forecast
+49;instance_series;DE-TransnetBW Wind Power Production MWh/h 15min Forecast;gfs;;;eq_ins_production;7 */6 * * *;de_transnetbw_wind_power_gfs_production_forecast
+50;instance_series;DE-Amprion Wind Power Production MWh/h 15min Forecast;ecsr;;;eq_ins_production;7 */6 * * *;de_amprion_wind_power_ecsr_production_forecast
+51;instance_series;DE-Amprion Wind Power Production MWh/h 15min Forecast;ec;;;eq_ins_production;7 */6 * * *;de_amprion_wind_power_ec_production_forecast
+52;instance_series;DE-Amprion Wind Power Production MWh/h 15min Forecast;iconsr;;;eq_ins_production;7 */6 * * *;de_amprion_wind_power_iconsr_production_forecast
+53;instance_series;DE-Amprion Wind Power Production MWh/h 15min Forecast;icon;;;eq_ins_production;7 */6 * * *;de_amprion_wind_power_icon_production_forecast
+54;instance_series;DE-Amprion Wind Power Production MWh/h 15min Forecast;gfs;;;eq_ins_production;7 */6 * * *;de_amprion_wind_power_gfs_production_forecast
+55;instance_series;DE-TenneT Solar Photovoltaic Production MWh/h 15min Forecast;ecsr;;;eq_ins_production;7 */6 * * *;de_tennet_solar_power_ecsr_production_forecast
+56;instance_series;DE-TenneT Solar Photovoltaic Production MWh/h 15min Forecast;ec;;;eq_ins_production;7 */6 * * *;de_tennet_solar_power_ec_production_forecast
+57;instance_series;DE-TenneT Solar Photovoltaic Production MWh/h 15min Forecast;iconsr;;;eq_ins_production;7 */6 * * *;de_tennet_solar_power_iconsr_production_forecast
+58;instance_series;DE-TenneT Solar Photovoltaic Production MWh/h 15min Forecast;icon;;;eq_ins_production;7 */6 * * *;de_tennet_solar_power_icon_production_forecast
+59;instance_series;DE-TenneT Solar Photovoltaic Production MWh/h 15min Forecast;gfs;;;eq_ins_production;7 */6 * * *;de_tennet_solar_power_gfs_production_forecast
+60;instance_series;DE-50Hertz Solar Photovoltaic Production MWh/h 15min Forecast;ecsr;;;eq_ins_production;13 */6 * * *;de_50hertz_solar_power_ecsr_production_forecast
+61;instance_series;DE-50Hertz Solar Photovoltaic Production MWh/h 15min Forecast;ec;;;eq_ins_production;13 */6 * * *;de_50hertz_solar_power_ec_production_forecast
+62;instance_series;DE-50Hertz Solar Photovoltaic Production MWh/h 15min Forecast;iconsr;;;eq_ins_production;13 */6 * * *;de_50hertz_solar_power_iconsr_production_forecast
+63;instance_series;DE-50Hertz Solar Photovoltaic Production MWh/h 15min Forecast;icon;;;eq_ins_production;13 */6 * * *;de_50hertz_solar_power_icon_production_forecast
+64;instance_series;DE-50Hertz Solar Photovoltaic Production MWh/h 15min Forecast;gfs;;;eq_ins_production;13 */6 * * *;de_50hertz_solar_power_gfs_production_forecast
+65;instance_series;DE-TransnetBW Solar Photovoltaic Production MWh/h 15min Forecast;ecsr;;;eq_ins_production;13 */6 * * *;de_transnetbw_solar_power_ecsr_production_forecast
+66;instance_series;DE-TransnetBW Solar Photovoltaic Production MWh/h 15min Forecast;ec;;;eq_ins_production;13 */6 * * *;de_transnetbw_solar_power_ec_production_forecast
+67;instance_series;DE-TransnetBW Solar Photovoltaic Production MWh/h 15min Forecast;iconsr;;;eq_ins_production;13 */6 * * *;de_transnetbw_solar_power_iconsr_production_forecast
+68;instance_series;DE-TransnetBW Solar Photovoltaic Production MWh/h 15min Forecast;icon;;;eq_ins_production;13 */6 * * *;de_transnetbw_solar_power_icon_production_forecast
+69;instance_series;DE-TransnetBW Solar Photovoltaic Production MWh/h 15min Forecast;gfs;;;eq_ins_production;13 */6 * * *;de_transnetbw_solar_power_gfs_production_forecast
+70;instance_series;DE-Amprion Solar Photovoltaic Production MWh/h 15min Forecast;ecsr;;;eq_ins_production;13 */6 * * *;de_amprion_solar_power_ecsr_production_forecast
+71;instance_series;DE-Amprion Solar Photovoltaic Production MWh/h 15min Forecast;ec;;;eq_ins_production;13 */6 * * *;de_amprion_solar_power_ec_production_forecast
+72;instance_series;DE-Amprion Solar Photovoltaic Production MWh/h 15min Forecast;iconsr;;;eq_ins_production;13 */6 * * *;de_amprion_solar_power_iconsr_production_forecast
+73;instance_series;DE-Amprion Solar Photovoltaic Production MWh/h 15min Forecast;icon;;;eq_ins_production;13 */6 * * *;de_amprion_solar_power_icon_production_forecast
+74;instance_series;DE-Amprion Solar Photovoltaic Production MWh/h 15min Forecast;gfs;;;eq_ins_production;13 */6 * * *;de_amprion_solar_power_gfs_production_forecast
+75;instance_series;DE Sensitivity Spot EUR/MWh H Forecast;postfix;;;eq_ins_price;18 */6 * * *;de_sensitivity_postfix_spot_forecast
+76;instance_series;DE Sensitivity Spot EUR/MWh H Forecast;prefix;;;eq_ins_price;18 */6 * * *;de_sensitivity_prefix_spot_forecast
+77;instance_series;DE-50Hertz Consumption Index Cloudiness % 15min Forecast;ecsr;;;eq_ins_weather;18 */6 * * *;de_50hertz_consumption_ecsr_index_cloudiness_forecast
+78;instance_series;DE-50Hertz Consumption Index Cloudiness % 15min Forecast;ec;;;eq_ins_weather;18 */6 * * *;de_50hertz_consumption_ec_index_cloudiness_forecast
+79;instance_series;DE-50Hertz Consumption Index Cloudiness % 15min Forecast;iconsr;;;eq_ins_weather;18 */6 * * *;de_50hertz_consumption_iconsr_index_cloudiness_forecast
+80;instance_series;DE-50Hertz Consumption Index Cloudiness % 15min Forecast;icon;;;eq_ins_weather;18 */6 * * *;de_50hertz_consumption_icon_index_cloudiness_forecast
+81;instance_series;DE-50Hertz Consumption Index Cloudiness % 15min Forecast;gfs;;;eq_ins_weather;18 */6 * * *;de_50hertz_consumption_gfs_index_cloudiness_forecast
+82;instance_series;DE-Amprion Consumption Index Cloudiness % 15min Forecast;ecsr;;;eq_ins_weather;18 */6 * * *;de_amprion_consumption_ecsr_index_cloudiness_forecast
+83;instance_series;DE-Amprion Consumption Index Cloudiness % 15min Forecast;ec;;;eq_ins_weather;18 */6 * * *;de_amprion_consumption_ec_index_cloudiness_forecast
+84;instance_series;DE-Amprion Consumption Index Cloudiness % 15min Forecast;iconsr;;;eq_ins_weather;18 */6 * * *;de_amprion_consumption_iconsr_index_cloudiness_forecast
+85;instance_series;DE-Amprion Consumption Index Cloudiness % 15min Forecast;icon;;;eq_ins_weather;18 */6 * * *;de_amprion_consumption_icon_index_cloudiness_forecast
+86;instance_series;DE-Amprion Consumption Index Cloudiness % 15min Forecast;gfs;;;eq_ins_weather;18 */6 * * *;de_amprion_consumption_gfs_index_cloudiness_forecast
+87;instance_series;DE-TenneT Consumption Index Cloudiness % 15min Forecast;ecsr;;;eq_ins_weather;18 */6 * * *;de_tennet_consumption_ecsr_index_cloudiness_forecast
+88;instance_series;DE-TenneT Consumption Index Cloudiness % 15min Forecast;ec;;;eq_ins_weather;18 */6 * * *;de_tennet_consumption_ec_index_cloudiness_forecast
+89;instance_series;DE-TenneT Consumption Index Cloudiness % 15min Forecast;iconsr;;;eq_ins_weather;18 */6 * * *;de_tennet_consumption_iconsr_index_cloudiness_forecast
+90;instance_series;DE-TenneT Consumption Index Cloudiness % 15min Forecast;icon;;;eq_ins_weather;18 */6 * * *;de_tennet_consumption_icon_index_cloudiness_forecast
+91;instance_series;DE-TenneT Consumption Index Cloudiness % 15min Forecast;gfs;;;eq_ins_weather;18 */6 * * *;de_tennet_consumption_gfs_index_cloudiness_forecast
+92;instance_series;DE-TransnetBW Consumption Index Cloudiness % 15min Forecast;ecsr;;;eq_ins_weather;18 */6 * * *;de_transnetbw_consumption_ecsr_index_cloudiness_forecast
+93;instance_series;DE-TransnetBW Consumption Index Cloudiness % 15min Forecast;ec;;;eq_ins_weather;18 */6 * * *;de_transnetbw_consumption_ec_index_cloudiness_forecast
+94;instance_series;DE-TransnetBW Consumption Index Cloudiness % 15min Forecast;iconsr;;;eq_ins_weather;18 */6 * * *;de_transnetbw_consumption_iconsr_index_cloudiness_forecast
+95;instance_series;DE-TransnetBW Consumption Index Cloudiness % 15min Forecast;icon;;;eq_ins_weather;18 */6 * * *;de_transnetbw_consumption_icon_index_cloudiness_forecast
+96;instance_series;DE-TransnetBW Consumption Index Cloudiness % 15min Forecast;gfs;;;eq_ins_weather;18 */6 * * *;de_transnetbw_consumption_gfs_index_cloudiness_forecast
+97;time_series;DE Hydro Reservoir Production MWh/h 15min Actual;;-2800;2800;eq_ts_production;3 0 * * *;de_hydro_reservoir_production_actual
+98;time_series;DE Consumption Temperature °C H Actual;;-2800;2800;eq_ts_weather;3 0 * * *;de_consumption_temperature_actual
+99;time_series;DE Volume Intraday Auction IDA2 MWh EPEX 15min Actual;;-2800;2800;eq_ts_volume;55 0,1 * * *;de_volume_intraday_auction_ida2_actual
+100;time_series;DE Volume Intraday Auction IDA3 MWh EPEX 15min Actual;;-2800;2800;eq_ts_volume;55 0,1 * * *;de_volume_intraday_auction_ida3_actual
+101;time_series;DE Price Intraday Auction IDA1 EUR/MWh EPEX 15min Actual;;-2800;2800;eq_ts_price;0,15,30 16,17 * * *;de_price_intraday_auction_ida1_actual
+102;time_series;DE Price Intraday Auction IDA2 EUR/MWh EPEX 15min Actual;;-2800;2800;eq_ts_price;10,20,30,40 22 * * *;de_price_intraday_auction_ida2_actual
+103;time_series;DE Price Intraday Auction IDA3 EUR/MWh EPEX 15min Actual;;-2800;2800;eq_ts_price;10,20,30,40 10 * * *;de_price_intraday_auction_ida3_actual
+104;time_series;DE Exchange Day-Ahead Schedule Net Export MWh/h H Actual;;-2800;2800;eq_ts_volume;10,20,30,40 10 * * *;de_exchange_da_schedule_net_export_actual
+105;instance_series;DE Exchange Day-Ahead Schedule Net Export MWh/h H Forecast;prefix;;;eq_ins_price;18 */6 * * *;de_exchange_da_schedule_net_export_prefix_forecast
+106;instance_series;DE Exchange Day-Ahead Schedule Net Export MWh/h H Forecast;postfix;;;eq_ins_price;18 */6 * * *;de_exchange_da_schedule_net_export_postfix_forecast
+107;time_series;DE Price Imbalance Single EUR/MWh 15min Actual;;-2800;2800;eq_ts_price;10,20,30,40 10 * * *;de_price_imbalance_single_15min_actual
