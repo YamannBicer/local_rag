@@ -1,7 +1,7 @@
 from langchain.prompts import ChatPromptTemplate
 from langchain_ollama import ChatOllama
 from langchain_chroma import Chroma
-from get_embedding_function import get_embedding_function
+from embeddings.get_embedding_function import get_embedding_function
 
 CHROMA_PATH = "chroma"
 

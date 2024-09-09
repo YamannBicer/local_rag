@@ -2,7 +2,7 @@ from langchain_chroma import Chroma
 from langchain.schema.document import Document
 from get_embedding_function import get_embedding_function
 
-CHROMA_PATH = "chroma"
+CHROMA_PATH = "../chroma"
 
 
 def add_to_chroma(chunks: list[Document]):
