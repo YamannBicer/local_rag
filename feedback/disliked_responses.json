@@ -1,0 +1,10 @@
+[
+    {
+        "query": "offer me something I do not know about ewms",
+        "response": "Based on the previous conversation history and the additional context provided, here's something you might not know about EWMS:\n\n**EWMS has a built-in \"Job Monitoring\" feature**, which allows users to track and monitor various jobs and tasks within their organization. This feature is accessible from the Main Menu and provides real-time updates on job status, progress, and completion. By leveraging this feature, users can ensure that tasks are completed efficiently, and deadlines are met.\n\nThis Job Monitoring feature is particularly useful for management, operations, and power plant units, as it enables them to stay informed about ongoing projects and make data-driven decisions to optimize their business operations."
+    },
+    {
+        "query": "tell me something I likely do not know about ewms",
+        "response": "Based on the context, it seems that EWMS is a comprehensive platform designed for the energy sector. One thing you might not know about EWMS is that it offers live data streaming capabilities, which allows users to access real-time information and make informed decisions quickly.\n\nThis feature is mentioned in the guide as one of the services provided by the platform, indicating that EWMS has the capability to stream live data, which can be particularly useful for users in management, finance, trading, operations, and power plant units."
+    }
+]
