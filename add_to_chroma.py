@@ -12,14 +12,18 @@ def add_to_chroma(chunks: list[Document]):
         embedding_function=get_embedding_function()
     )
 
-    db.reset_collection()  # Clears all documents from the database.
-    print("🗑️ Cleared all documents from the database")
+    # Get the list of existing document IDs from the Chroma database
+    existing_ids = set(db.get()['ids'])  # Assumes db.get() returns a dict with an 'ids' key
 
+    # Filter out chunks that already exist in the database
+    new_chunks = [chunk for chunk in chunks if chunk.metadata["id"] not in existing_ids]
+    new_chunk_ids = [chunk.metadata["id"] for chunk in new_chunks]
 
-    chunk_ids = [chunk.metadata["id"] for chunk in chunks]
-    db.add_documents(chunks, ids=chunk_ids)
-
-    print(f"✅ {len(chunk_ids)} documents reloaded.")
+    if new_chunks:
+        db.add_documents(new_chunks, ids=new_chunk_ids)
+        print(f"✅ {len(new_chunk_ids)} new documents added.")
+    else:
+        print("✅ All documents already exist in the database.")
 
 
 def inspect_chroma():
@@ -31,4 +35,4 @@ def inspect_chroma():
 
     print(db.get().keys())
     # print(db.get()["ids"])
-    # print(db.get(ids=["data\\guide.txt:10"]))
+    # print(db.get(ids=["data\\guide.txt:10"])) only load non existent documents

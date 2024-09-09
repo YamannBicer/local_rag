@@ -1,4 +1,4 @@
-meta_id;data_type;curve_name;instance_tag;date_from;date_to;destination_table;schedule;name
+id;data_type;curve_name;instance_tag;date_from;date_to;destination_table;schedule;name
 1;time_series;DE Wind Power Production MWh/h 15min Actual;;-2800;2800;eq_ts_production;17 * * * *;de_wind_production_actual
 2;time_series;DE Wind Power Production Onshore MWh/h 15min Actual;;-2800;2800;eq_ts_production;17 * * * *;de_wind_onshore_production_actual
 3;time_series;DE Wind Power Production Offshore MWh/h 15min Actual;;-2800;2800;eq_ts_production;17 * * * *;de_wind_offshore_production_actual

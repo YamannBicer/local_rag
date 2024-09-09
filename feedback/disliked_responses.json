@@ -6,5 +6,10 @@
     {
         "query": "tell me something I likely do not know about ewms",
         "response": "Based on the context, it seems that EWMS is a comprehensive platform designed for the energy sector. One thing you might not know about EWMS is that it offers live data streaming capabilities, which allows users to access real-time information and make informed decisions quickly.\n\nThis feature is mentioned in the guide as one of the services provided by the platform, indicating that EWMS has the capability to stream live data, which can be particularly useful for users in management, finance, trading, operations, and power plant units."
+    },
+    {
+        "user": "yaman",
+        "query": "how to use ewms",
+        "response": "Based on our previous conversation history, I can provide you with information on how to use EWMS (Energy Web Management System).\n\nThis guide is designed for users in management, finance, trading, operations, and power plant units. It provides information on managing various aspects of the energy sector through the EWMS application.\n\nTo get started with using EWMS, you'll need to log into the application first. You can do this by following the instructions provided in our previous conversation: https://ewms.io/login. Once logged in, you'll be greeted by the main screen where you can access various services provided by the platform.\n\nThe Main Menu offers 8 main sections that provide access to different services:\n\n1. Reports\n2. Trade Management\n3. Job Monitoring\n4. Job Data Entry\n5. Log Viewer\n6. Invoice Management\n7. Contract Management\n8. Power Plant Management\n\nEach of these sections provides a specific set of features and functionalities for managing various aspects of the energy sector.\n\nIf you're new to EWMS, I recommend exploring each section to understand what's available and how it can be used to manage your tasks and responsibilities effectively.\n\nLet me know if you have any further questions or need more information on using EWMS!"
     }
 ]
