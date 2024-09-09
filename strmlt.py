@@ -24,6 +24,31 @@ def fetch_response():
         st.session_state.current_response = response
         st.session_state.user_input = ""
 
+def authenticate_user():
+    username = st.text_input("Username")
+    if st.button("Login"):
+        # Simple authentication logic (replace with actual authentication)
+        if username:
+            st.session_state.logged_in_user = username
+            return True
+        else:
+            st.error("Please enter a username")
+            return False
+    return False
+
+def handle_feedback():
+    if st.session_state.current_response:
+        st.write("Do you like the response?")
+        col1, col2 = st.columns(2)
+
+        with col1:
+            if st.button("👍 Like"):
+                save_feedback(st.session_state.current_query, st.session_state.current_response, like=True, user=st.session_state.logged_in_user)
+
+        with col2:
+            if st.button("👎 Dislike"):
+                save_feedback(st.session_state.current_query, st.session_state.current_response, like=False, user=st.session_state.logged_in_user)
+
 def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = ""
@@ -43,25 +68,11 @@ def main():
         st.markdown(st.session_state.chat_history, unsafe_allow_html=True)
         st.text_input("You:", key="user_input", on_change=fetch_response)
 
-        if st.session_state.current_response:
-            st.write("Do you like the response?")
-            col1, col2 = st.columns(2)
+        handle_feedback()
 
-            with col1:
-                if st.button("👍 Like"):
-                    save_feedback(st.session_state.current_query, st.session_state.current_response, like=True, user=st.session_state.logged_in_user)
-
-            with col2:
-                if st.button("👎 Dislike"):
-                    save_feedback(st.session_state.current_query, st.session_state.current_response, like=False, user=st.session_state.logged_in_user)
     else:
-        username = st.text_input("Username")
-        if st.button("Login"):
-            # Simple authentication logic (replace with actual authentication)
-            if username:
-                st.session_state.logged_in_user = username
-            else:
-                st.error("Please enter a username")
+        if authenticate_user():
+            st.experimental_rerun()  # Rerun the app after successful login to refresh the view
 
 if __name__ == "__main__":
     main()
