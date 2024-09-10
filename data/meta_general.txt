@@ -1,0 +1,13 @@
+If you are asked about how to find certain data in the database, you can provide directions by considering the information below.
+
+destination_table tells he table where the data is located.
+meta_id tells the id of the data in the destination_table.
+data names contain the information for you to relate which data the user is asking about.
+
+data names might contain below information:
+an ISO country code (NO for norway etc.) if there are none then it is about germany (DE: deutschland),
+it might contain a number next to the ISO country code which represents which electrical region of the country it is about, when there are multiple data names with same names with only difference being the number next to the ISO country code keep this in mind when answering the question.
+whether the data is electiricity production or electricity consumption (load) data,
+if it is production then it might contain which resource is used for production (wind, solar, wind_and_solar, biomass, etc.),
+whether the data is actual data or forecasted data,
+some of the names might be in german language (hochrehnung for forecast etc.)

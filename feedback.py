@@ -10,11 +10,16 @@ def handle_feedback():
         # Initialize feedback_given state if not present
         if "feedback_given" not in st.session_state:
             st.session_state.feedback_given = False
+        if "liked" not in st.session_state:
+            st.session_state.liked = False
+        if "disliked" not in st.session_state:
+            st.session_state.disliked = False
 
+        feedback_given = st.session_state.feedback_given
 
         with col1:
             # Disable the "Like" button if any feedback has been given
-            if st.button("👍 Like", disabled=st.session_state.feedback_given):
+            if st.button("👍 Like", disabled=feedback_given):
                 save_feedback(st.session_state.current_query, st.session_state.current_response, like=True, user="user")
                 st.success("You liked the response!")
                 st.session_state.liked = True
@@ -23,7 +28,7 @@ def handle_feedback():
 
         with col2:
             # Disable the "Dislike" button if any feedback has been given
-            if st.button("👎 Dislike", disabled=st.session_state.feedback_given):
+            if st.button("👎 Dislike", disabled=feedback_given):
                 save_feedback(st.session_state.current_query, st.session_state.current_response, like=False, user="user")
                 st.error("You disliked the response!")
                 st.session_state.liked = False

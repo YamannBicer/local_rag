@@ -5,7 +5,7 @@ from embeddings.get_embedding_function import get_embedding_function
 
 CHROMA_PATH = "chroma"
 
-SYSTEM_PROMPT = "You are a helpful and informative assistant that provides information and answers questions based on the context given."
+SYSTEM_PROMPT = "You are a helpful and informative assistant that provides accurate, relevant and helpful information and answers questions based on the context and instructions given."
 
 CHAT_PROMPT_TEMPLATE = """
 Here is the previous conversation history:
@@ -13,11 +13,29 @@ Here is the previous conversation history:
 {chat_history}
 
 Keep the conversation history in mind when answering user's questions.
-Answer the current question based only on the following context:
 
+Keep the following information in mind ONLY IF the question is about finding a specific data in a database with its destination_table and meta_id otherwise ignore i:
+
+If you are asked about how to find certain data in the database, you can provide directions by considering the information below.
+
+destination_table tells he table where the data is located.
+meta_id tells the id of the data in the destination_table.
+data names contain the information for you to relate which data the user is asking about.
+
+data names might contain below information:
+an ISO country code (NO for norway etc.) if there are none then it is about germany (DE: deutschland),
+it might contain a number next to the ISO country code which represents which electrical region of the country it is about, when there are multiple data names with same names with only difference being the number next to the ISO country code keep this in mind when answering the question.
+whether the data is electiricity production or electricity consumption (load) data,
+if it is production then it might contain which resource is used for production (wind, solar, wind_and_solar, biomass, etc.),
+whether the data is actual data or forecasted data,
+some of the names might be in german language (hochrehnung for forecast etc.).
+
+If the question is about finding a specific data in a database with its destination_table and meta_id, you can provide directions by considering the information above.
+
+Also utilize the context below in order to provide a more accurate, helpful and relevant response:
 {context}
 
-Answer this new question based on the above context: {input}
+Provide an informative and relevant answer to this new question based on the above context: {input}
 """
 
 
@@ -41,14 +59,14 @@ def query_chatbot(query_text: str, chat_history: str):
     db = Chroma(collection_name="vector_database",persist_directory=CHROMA_PATH, embedding_function=embedding_function)
 
     # Search the DB.
-    results = db.similarity_search_with_score(query_text, k=3)
+    results = db.similarity_search_with_score(query_text, k=7)
     sources = [doc.metadata.get("id") for doc, _ in results]
 
-    # for i, (doc, score) in enumerate(results):
-    #     print(f"Chunk {i + 1}:")
-    #     print(f"{doc.page_content}")
-    #     print(f"Chunk ID: {doc.metadata.get('id')}")
-    #     print(f"Score: {score}\n\n")
+    for i, (doc, score) in enumerate(results):
+        print(f"Chunk {i + 1}:")
+        print(f"{doc.page_content}")
+        print(f"Chunk ID: {doc.metadata.get('id')}")
+        print(f"Score: {score}\n\n")
 
     context_text = "\n\n---\n\n".join([doc.page_content for doc, _ in results])
     prompt = ChatPromptTemplate.from_messages(
