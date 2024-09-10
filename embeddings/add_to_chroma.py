@@ -13,9 +13,9 @@ def add_to_chroma(chunks: list[Document]):
     )
 
     # reset the database and look at the number of documents
-    # print(len(set(db.get()['ids'])))
-    # db.reset()
-    # print(len(set(db.get()['ids'])))
+    print(len(set(db.get()['ids'])))
+    db.reset_collection()
+    print(len(set(db.get()['ids'])))
 
     # Get the list of existing document IDs from the Chroma database
     existing_ids = set(db.get()['ids'])  # Assumes db.get() returns a dict with an 'ids' key
