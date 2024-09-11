@@ -39,14 +39,14 @@ def query_chatbot(query_text: str, chat_history: str):
     db = Chroma(collection_name="vector_database",persist_directory=CHROMA_PATH, embedding_function=embedding_function)
 
     # Search the DB.
-    results = db.similarity_search_with_score(query_text, k=7)
+    results = db.similarity_search_with_score(query_text, k=10)
     sources = [doc.metadata.get("id") for doc, _ in results]
 
-    # for i, (doc, score) in enumerate(results):
-    #     print(f"Chunk {i + 1}:")
-    #     print(f"{doc.page_content}")
-    #     print(f"Chunk ID: {doc.metadata.get('id')}")
-    #     print(f"Score: {score}\n\n")
+    for i, (doc, score) in enumerate(results):
+        print(f"Chunk {i + 1}:")
+        print(f"{doc.page_content}")
+        print(f"Chunk ID: {doc.metadata.get('id')}")
+        print(f"Score: {score}\n\n")
 
     context_text = "\n\n---\n\n".join([doc.page_content for doc, _ in results])
     prompt = ChatPromptTemplate.from_messages(
